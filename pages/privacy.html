@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+      <meta name="description" content="This page describes the Community.lawyer platform&#39;s privacy policy."></meta>
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://checkout.stripe.com/checkout.js"></script>
+
+      <script type="text/javascript"
+              src="https://js.authorize.net/v1/Accept.js"
+              charset="utf-8">
+      </script>
+
+    <title>
+
+        Privacy Policy | DC Refers
+
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="wSIQKDkm/QoDmXdHcGXtcFSeBVcpBs4T7ZuxAt8b7dDxPRxhrBt5fugQc6Aj8IuSkDEd0ozoBUw1ybFfgMMyjw==" />
+<meta name="action-cable-url" content="wss://afterpattern.com/cable" />
+
+  <!-- https://polyfill.io/v3/url-builder/ -->
+
+<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?flags=gated&features=Array.from%2CArray.of%2CArray.prototype.entries%2CArray.prototype.every%2CArray.prototype.filter%2CArray.prototype.find%2CArray.prototype.includes%2CArray.prototype.indexOf%2CArray.prototype.keys%2CArray.prototype.map%2CArray.prototype.reduce%2CArray.prototype.some%2CArray.prototype.values%2Cfetch%2CString.prototype.startsWith%2Cdocument.getElementsByClassName%2Cdocument%2Cconsole.log%2Cconsole%2CXMLHttpRequest%2CString.prototype.includes%2CString.prototype.endsWith%2CSet%2CObject.entries%2CObject.assign%2CNumber.parseInt%2CNumber.parseFloat%2CNode.prototype.contains%2CMutationObserver%2CJSON%2CDate.now%2CDate.prototype.toISOString%2CDOMRect%2CArray.prototype.forEach%2CArray.prototype.flatMap%2CArray.prototype.findIndex%2CFunction.prototype.bind%2CMap%2CNumber.isNaN%2CObject.keys%2CObject.values%2CString.prototype.padEnd%2CString.prototype.padStart%2CString.prototype.sub%2CString.prototype.trim%2CSymbol%2ClocalStorage%2CNodeList.prototype.forEach"></script>
+
+
+<input type="hidden" name="" id="global-data" value="" data-network-name="DC Refers" data-stripe-public-key="pk_live_N9oNSB1T9k37N51rriMihyWI" data-lawpay-public-key="m_ejzaElK-TR2DVmuyYbe6og" data-admin-logged-in="false" data-anet-key="" data-anet-id="" data-rails-environment="production" />
+<link rel="shortcut icon" type="image/x-icon" href="../assets/favicons/cl-48704a06a5367b41d330d31ac10e36609289c5aff18faedbf374d3293e94c700.ico" />
+
+
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <link rel="stylesheet" media="screen" href="../packs/application-e0b8bb95.css" />
+    <script src="../packs/application-4388c5d719fe926ed017.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/card/2.4.0/jquery.card.min.js"></script>
+
+
+
+    <script>
+  if (typeof window.__REACT_DEVTOOLS_GLOBAL_HOOK__ === 'object') {
+    __REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function() {};
+  }
+</script>
+
+
+    <script>
+var _rollbarConfig = {
+  accessToken: "a7b9bd9008a64e8f9dbf000d387d205f",
+  captureUncaught: true,
+  captureUnhandledRejections: true,
+  payload: {
+      environment: "production"
+  },
+  checkIgnore: function(isUncaught, args, payload) {
+    // Code here to determine whether or not to send the payload to the Rollbar API
+    // Return true to ignore the payload
+    const shouldIgnore = errorsToIgnore.some(function(error) { return args[0].match(error) });
+    return shouldIgnore;
+  },
+};
+
+const errorsToIgnore = [
+  "ReferenceError: Can't find variable: StripeCheckout", // Usually due to old browser, maybe Stripe doesn't support them?
+  "Uncaught ReferenceError: StripeCheckout is not defined", // Usually due to old browser, maybe Stripe doesn't support them?
+  "TypeError: null is not an object (evaluating 'localStorage.getItem')", // Localstorage is inaccessible, browser may not support it
+  "TypeError: Cannot read property 'getItem' of null", // Localstorage is inaccessible, browser may not support it
+  "TypeError: 'null' is not an object (evaluating 'localStorage.getItem')", // See above
+  "TypeError: 'undefined' is not a function (evaluating 't.getAttribute(\"type\")')", // Usually a bot, sometimes an old browser
+  "TypeError: Cannot read property '2' of null", // ChargeIO error
+  "SecurityError: Permission denied to access property \"dispatchEvent\" on cross-origin object", // Due to a Mozilla add-in outside our control
+  "TypeError: document.getElementsByClassName.ToString is not a function", // Samsung specific error, see https://github.com/SamsungInternet/support/issues/56
+  "(unknown): Script error.", // wtf?
+  "Uncaught ReferenceError: MoatMAK is not defined", // Something to do with StackAdept, see https://twitter.com/MrMrBug/status/1004411714186633216
+  "TypeError: l.LegacyGlobal.should_do_lastpass_here is not a function", // Lastpass browser extension error
+];
+
+// Rollbar Snippet
+!function(r){var e={};function o(n){if(e[n])return e[n].exports;var t=e[n]={i:n,l:!1,exports:{}};return r[n].call(t.exports,t,t.exports,o),t.l=!0,t.exports}o.m=r,o.c=e,o.d=function(r,e,n){o.o(r,e)||Object.defineProperty(r,e,{enumerable:!0,get:n})},o.r=function(r){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(r,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(r,"__esModule",{value:!0})},o.t=function(r,e){if(1&e&&(r=o(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var n=Object.create(null);if(o.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var t in r)o.d(n,t,function(e){return r[e]}.bind(null,t));return n},o.n=function(r){var e=r&&r.__esModule?function(){return r.default}:function(){return r};return o.d(e,"a",e),e},o.o=function(r,e){return Object.prototype.hasOwnProperty.call(r,e)},o.p="",o(o.s=0)}([function(r,e,o){"use strict";var n=o(1),t=o(5);_rollbarConfig=_rollbarConfig||{},_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://cdn.rollbar.com/rollbarjs/refs/tags/v2.23.0/rollbar.min.js",_rollbarConfig.async=void 0===_rollbarConfig.async||_rollbarConfig.async;var a=n.setupShim(window,_rollbarConfig),l=t(_rollbarConfig);window.rollbar=n.Rollbar,a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,l)},function(r,e,o){"use strict";var n=o(2),t=o(3);function a(r){return function(){try{return r.apply(this,arguments)}catch(r){try{console.error("[Rollbar]: Internal error",r)}catch(r){}}}}var l=0;function i(r,e){this.options=r,this._rollbarOldOnError=null;var o=l++;this.shimId=function(){return o},"undefined"!=typeof window&&window._rollbarShims&&(window._rollbarShims[o]={handler:e,messages:[]})}var s=o(4),d=function(r,e){return new i(r,e)},c=function(r){return new s(d,r)};function u(r){return a((function(){var e=this,o=Array.prototype.slice.call(arguments,0),n={shim:e,method:r,args:o,ts:new Date};window._rollbarShims[this.shimId()].messages.push(n)}))}i.prototype.loadFull=function(r,e,o,n,t){var l=!1,i=e.createElement("script"),s=e.getElementsByTagName("script")[0],d=s.parentNode;i.crossOrigin="",i.src=n.rollbarJsUrl,o||(i.async=!0),i.onload=i.onreadystatechange=a((function(){if(!(l||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){i.onload=i.onreadystatechange=null;try{d.removeChild(i)}catch(r){}l=!0,function(){var e;if(void 0===r._rollbarDidLoad){e=new Error("rollbar.js did not load");for(var o,n,a,l,i=0;o=r._rollbarShims[i++];)for(o=o.messages||[];n=o.shift();)for(a=n.args||[],i=0;i<a.length;++i)if("function"==typeof(l=a[i])){l(e);break}}"function"==typeof t&&t(e)}()}})),d.insertBefore(i,s)},i.prototype.wrap=function(r,e,o){try{var n;if(n="function"==typeof e?e:function(){return e||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._rollbar_wrapped&&(r._rollbar_wrapped=function(){o&&"function"==typeof o&&o.apply(this,arguments);try{return r.apply(this,arguments)}catch(o){var e=o;throw e&&("string"==typeof e&&(e=new String(e)),e._rollbarContext=n()||{},e._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=e),e}},r._rollbar_wrapped._isWrap=!0,r.hasOwnProperty))for(var t in r)r.hasOwnProperty(t)&&(r._rollbar_wrapped[t]=r[t]);return r._rollbar_wrapped}catch(e){return r}};for(var p="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad".split(","),f=0;f<p.length;++f)i.prototype[p[f]]=u(p[f]);r.exports={setupShim:function(r,e){if(r){var o=e.globalAlias||"Rollbar";if("object"==typeof r[o])return r[o];r._rollbarShims={},r._rollbarWrappedError=null;var l=new c(e);return a((function(){e.captureUncaught&&(l._rollbarOldOnError=r.onerror,n.captureUncaughtExceptions(r,l,!0),e.wrapGlobalEventHandlers&&t(r,l,!0)),e.captureUnhandledRejections&&n.captureUnhandledRejections(r,l,!0);var a=e.autoInstrument;return!1!==e.enabled&&(void 0===a||!0===a||"object"==typeof a&&a.network)&&r.addEventListener&&(r.addEventListener("load",l.captureLoad.bind(l)),r.addEventListener("DOMContentLoaded",l.captureDomContentLoaded.bind(l))),r[o]=l,l}))()}},Rollbar:c}},function(r,e,o){"use strict";function n(r,e,o,n){r._rollbarWrappedError&&(n[4]||(n[4]=r._rollbarWrappedError),n[5]||(n[5]=r._rollbarWrappedError._rollbarContext),r._rollbarWrappedError=null);var t=e.handleUncaughtException.apply(e,n);o&&o.apply(r,n),"anonymous"===t&&(e.anonymousErrorsPending+=1)}r.exports={captureUncaughtExceptions:function(r,e,o){if(r){var t;if("function"==typeof e._rollbarOldOnError)t=e._rollbarOldOnError;else if(r.onerror){for(t=r.onerror;t._rollbarOldOnError;)t=t._rollbarOldOnError;e._rollbarOldOnError=t}e.handleAnonymousErrors();var a=function(){var o=Array.prototype.slice.call(arguments,0);n(r,e,t,o)};o&&(a._rollbarOldOnError=t),r.onerror=a}},captureUnhandledRejections:function(r,e,o){if(r){"function"==typeof r._rollbarURH&&r._rollbarURH.belongsToShim&&r.removeEventListener("unhandledrejection",r._rollbarURH);var n=function(r){var o,n,t;try{o=r.reason}catch(r){o=void 0}try{n=r.promise}catch(r){n="[unhandledrejection] error getting `promise` from event"}try{t=r.detail,!o&&t&&(o=t.reason,n=t.promise)}catch(r){}o||(o="[unhandledrejection] error getting `reason` from event"),e&&e.handleUnhandledRejection&&e.handleUnhandledRejection(o,n)};n.belongsToShim=o,r._rollbarURH=n,r.addEventListener("unhandledrejection",n)}}}},function(r,e,o){"use strict";function n(r,e,o){if(e.hasOwnProperty&&e.hasOwnProperty("addEventListener")){for(var n=e.addEventListener;n._rollbarOldAdd&&n.belongsToShim;)n=n._rollbarOldAdd;var t=function(e,o,t){n.call(this,e,r.wrap(o),t)};t._rollbarOldAdd=n,t.belongsToShim=o,e.addEventListener=t;for(var a=e.removeEventListener;a._rollbarOldRemove&&a.belongsToShim;)a=a._rollbarOldRemove;var l=function(r,e,o){a.call(this,r,e&&e._rollbar_wrapped||e,o)};l._rollbarOldRemove=a,l.belongsToShim=o,e.removeEventListener=l}}r.exports=function(r,e,o){if(r){var t,a,l="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(t=0;t<l.length;++t)r[a=l[t]]&&r[a].prototype&&n(e,r[a].prototype,o)}}},function(r,e,o){"use strict";function n(r,e){this.impl=r(e,this),this.options=e,function(r){for(var e=function(r){return function(){var e=Array.prototype.slice.call(arguments,0);if(this.impl[r])return this.impl[r].apply(this.impl,e)}},o="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(","),n=0;n<o.length;n++)r[o[n]]=e(o[n])}(n.prototype)}n.prototype._swapAndProcessMessages=function(r,e){var o,n,t;for(this.impl=r(this.options);o=e.shift();)n=o.method,t=o.args,this[n]&&"function"==typeof this[n]&&("captureDomContentLoaded"===n||"captureLoad"===n?this[n].apply(this,[t[0],o.ts]):this[n].apply(this,t));return this},r.exports=n},function(r,e,o){"use strict";r.exports=function(r){return function(e){if(!e&&!window._rollbarInitialized){for(var o,n,t=(r=r||{}).globalAlias||"Rollbar",a=window.rollbar,l=function(r){return new a(r)},i=0;o=window._rollbarShims[i++];)n||(n=o.handler),o.handler._swapAndProcessMessages(l,o.messages);window[t]=n,window._rollbarInitialized=!0}}}}]);
+// End Rollbar Snippet
+
+// Set the person data to be sent with all errors for this notifier.
+</script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webshim/1.16.0/dev/polyfiller.js"></script>
+  <script>
+    webshim.polyfill('forms');
+  </script>
+
+<!-- Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Unspecified fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya:400,500,500i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant:400,400i,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+
+<!-- unconditional fonts -->
+<input type="hidden" id="rails-env" value="production">
+<input type="hidden" id="locale" value="en">
+
+    <script>
+    /* eslint-disable */
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-101425476-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+
+    <script src="../packs/lrs_components-357b83b4e6c864de7dd8.js"></script>
+
+  </head>
+  <body>
+
+
+        <nav class="navbar dcrefers">
+  <div class="wrapper">
+    <div class="navbar-header">
+      <div class="navbar-brand">
+        <a href="../index.html"><img class="feature-img" src="../assets/dcrefers/dc-logo-white-e9abe863c5a5288fc6a2c6210f895e96dac50c2946132aebacb45e48aff01864.png" /></a>
+      </div>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span id="menu_button" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        <span id="menu_button">Menu</span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="collapse-1">
+      <ul class="nav navbar-nav ">
+        <li class="top-level">
+          <a href="https://donorbox.org/dcrefers" class="navbar-link">Donate</a>
+        </li>
+        <li class="dropdown top-level">
+          <a href="privacy.html#" class="dropdown-toggle navbar-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About us <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a class="account-nav-link" id="about-us" href="about.html">About us</a>
+            </li>
+            <li>
+              <a class="account-nav-link" id="mission" href="mission.html">Our Mission and Board</a>
+            </li>
+            <li>
+              <a class="account-nav-link" id="news" href="news.html">News</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown top-level">
+          <a href="privacy.html#" class="dropdown-toggle navbar-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a class="account-nav-link" id="about-us" href="how_to_use.html">How to search DC Refers</a>
+            </li>
+            <li>
+              <a class="account-nav-link" id="about-us" href="resources.html">Other resources</a>
+            </li>
+          </ul>
+        </li>
+        <li class="top-level">
+          <a class="navbar-link" id="about-us" href="join_our_directory.html">Join directory</a>
+        </li>
+          <li class="top-level">
+            <a class="navbar-link" href="https://dcrefers.org/attorneys/sign_in">Sign in</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    
+<div id="terms_and_privacy">
+  <div class="container">
+    <h1 class="h1-style">Privacy Policy</h1>
+<p class="date">
+	Updated: February 28, 2020
+</p>
+<br>
+<p>
+	This privacy policy explains how Community.lawyer handles data collected by us as a data controller during the normal course of business, as well as how Community.lawyer as a data processor handles all information input into the Community.lawyer software or generated on behalf of Users in connection with the services. Community.lawyer provides a web-based platform that Users use to:
+</p>
+<ol>
+	<li>
+		develop app and client portals and make them available for use by Endusers; and
+	</li>
+	<li>
+		operate lawyer referral or directory services.
+	</li>
+</ol>
+<p>
+	The first set of services and websites are made available for use worldwide; the second set are only available within the United States of America.The regional availability of these products and services may affect the relevant privacy and data control laws that apply.
+</p>
+<h3 class="h3-style">
+	I. SCOPE
+</h3>
+<ul>
+	<li>
+		<span class="strong">Endusers of Apps and/or Client Portals</span>: If you are an Enduser of an app or client portal, we hereby notify you that we are not responsible for the processing of your data but are merely rendering services to the responsible party -- specifically, the Community.lawyer User who operates the app or client portal. We suggest you carefully read the terms and conditions and privacy policy of that User, as those are the ones governing the processing of your personal data. If you have any doubts, please contact that person, company, or organization.
+	</li>
+	<li>
+		<span class="strong">App Platform Users</span>: If you are a User of Community.lawyer’s App Platform Websites or Services, this Privacy Policy sets forth how we are processing your personal data, and how are we processing personal data on your behalf.
+	</li>
+	<li>
+		<span class="strong">Users of and Visitors to Lawyer Referral/Directory Portals</span>: If you are a User of or Visitor to a Lawyer Referral/Directory Portals, we hereby notify you that we are not responsible for the processing of your data but are merely rendering services to the responsible party -- specifically, the Community.lawyer User who administers the Lawyer Referral/Directory Portal. We suggest you carefully read the terms and conditions and privacy policy of that User, as those are the ones governing the processing of your personal data. If you have any doubts, please contact that person, company, or organization.
+	</li>
+	<li>
+		<span class="strong">Links to or Integrations with Third-Party Websites</span>: Our Website and Services may contain links and provide integrations to other websites. We do not operate, control, or endorse these websites, and your usage of these links and integrations is your choice and is subject to the policies and terms of those websites.
+	</li>
+</ul>
+<h3 class="h3-style">
+	II. INFORMATION WE COLLECT
+</h3>
+<ul>
+	<li>
+		<span class="strong">App / Client Portal Data</span>: We may store data about and collected by your apps or client portals.
+	</li>
+	<li>
+		<span class="strong">Lawyer Referral/Directory Submissions/Reports</span>: We may store data you input into forms or via reports on our Websites.
+	</li>
+	<li>
+		<span lass="strong">Contact data</span>: We may store names, emails, phone numbers, and similar types of data that you submit to us through contact forms or online tickets or via email or mail.
+	</li>
+	<li>
+		<span class="strong">Usage information</span>: We may collect usage information about you whenever you interact with our websites and services. This includes which webpages you visit, what you click on, when you perform those actions, what language preference you have, what you buy and so on.
+	</li>
+	<li>
+		<span class="strong">Device and browser data</span>: We may collect information from the device and application you use to access our services. Device data mainly means your IP address, operating system version, device type, device ID/MAC address, system and performance information, and browser type. If you are on a mobile device we also collect the UUID for that device.
+	</li>
+	<li>
+		<span class="strong">Information from Cookies</span>: We may use first-party and third-party cookies as described in our Cookies Policy.
+	</li>
+	<li>
+		<span class="strong">Log Data</span>: Our web servers may keep log files that record data each time a device accesses those servers. The log files contain data about the nature of each access, including originating IP addresses, internet service providers, the files viewed on our site (e.g., HTML pages, graphics, etc.), operating system versions, device type and timestamps.
+	</li>
+	<li>
+		<span class="strong">Information from third parties and integration partners</span>: We may collect your personal information from third parties where, for example, you give permission to those third parties to share your information with us or where you have made that information publicly available online.
+	</li>
+	<li>
+		<span class="strong">Billing information</span>: If you make a payment to Community.lawyer or via an app, portal, or other services, we may collect billing details like your name, email address, and financial information depending on the third party payment processor being utilized.
+	</li>
+	<li>
+		<span class="strong">Account information</span>: You need an account before you can use some Community.lawyer services. When you register for an account, we collect your username, password and email address.
+	</li>
+</ul>
+<h3 class="h3-style">
+	III. USAGE OF COLLECTED INFORMATION
+</h3>
+<p>
+	We process personal data about you either with your consent or in order to fulfill our contractual responsibility to deliver Services and perform the Websites and to pursue our legitimate interests of improving the Services and Websites. We have practices to help ensure that we limit these uses so that your privacy is respected and only the information related to achieving these legitimate aims is used.
+</p>
+<h4 class="h4-style">
+	A. Users
+</h4>
+<ul>
+	<li>
+		<span class="strong">Contact Information</span>: We use contact information to respond to your inquiries, send you information as part of the services, and send you marketing information (for as long as you do not opt-out). You can opt out of marketing communications at any time by clicking on the “unsubscribe” link in them.
+	</li>
+	<li>
+		<span class="strong">Reports</span>: We may store data you input into forms or via reports on our Websites in order to perform the service (for example, render those reports to Lawyer Referral/Directory Portal administrators).
+	</li>
+	<li>
+		<span class="strong">Information from Cookies</span>: We use first-party and third-party cookies as described in our Cookies Policy.
+	</li>
+	<li>
+		<span class="strong">How you use our services</span>: We use information about how you use our services to improve our services for you and all users. We may collect information about the types, patterns, and structure of apps and client portals you and other Users build, the types of subscriptions you purchase, and your account transactional behavior to help us improve the Services and Website.
+	</li>
+	<li>
+		<span class="strong">Device and browser data</span>: We use device data (including IP address) both to troubleshoot problems with our service and to make improvements to it.
+	</li>
+	<li>
+		<span class="strong">Log data</span>: We use log data for a range of business purposes, including to monitor abuse and troubleshoot, to create new services, features, content or make recommendations, to track behavior at the aggregate/anonymous level to identify and understand trends in the various interactions with our services, and to fix bugs and troubleshoot product functionality.
+	</li>
+	<li>
+		<span class="strong">Referral information</span>: We use referral information to track the success of our integrations and referral processes.
+	</li>
+	<li>
+		<span class="strong">Third parties and integrations</span>: We use information from third parties and integration partners, where applicable to one of our services to ensure you can use our service in conjunction with other services.
+	</li>
+	<li>
+		<span class="strong">Manage internal services</span>: To manage our services we will also internally use your information and data to enforce our agreements where applicable, to prevent potentially illegal activities, and to screen for and prevent undesirable or abusive activity.
+	</li>
+	<li>
+		<span class="strong">Legal uses</span>: To respond to legal requests or prevent fraud, we may need to use and disclose information or data we hold about you. If we receive a subpoena or other legal request, we may need to inspect the data we hold to determine how to respond.
+	</li>
+	<li>
+		<span class="strong">Account Information</span>: We need to use your account information to run your account, provide you with services, bill you for our services, provide you with customer support, and contact you about your service or account. We occasionally send you communications of a transactional nature (e.g. service-related announcements, billing-related matters, changes to our services or policies, a welcome email when you first register). You cannot opt out of these communications since they are required to provide our services to you.
+	</li>
+	<li>
+		<span class="strong">Your Enduser Data</span>: We will only use Enduser data to provide the Services. We do not sell Enduser data, nor do we identify or contact Endusers except on your request or where required by law.
+	</li>
+</ul>
+<h4 class="h4-style">
+	B. Endusers
+</h4>
+<p>
+	Users own, and are data controllers of, Enduser data. Depending on how the User chooses to use the software, Enduser Data may include personal data or personal information. To the extent that Community.lawyer processes User Data, we do so as a data processor on behalf of Users.
+</p>
+<ul>
+	<li>
+		<span class="strong">App / Client Portal Data</span>: We may store data about and collected by apps or client portals in order to render that data to Users and perform the service (for example, assemble documents like PDFs or Word documents with the inputted data).
+	</li>
+	<li>
+		<span class="strong">Information from Cookies</span>: We utilize cookies in apps and client portals that Endusers access strictly to ensure the proper functioning and security of the Service. For more information please see our Cookies Policy.
+	</li>
+	<li>
+		<span class="strong">Device and browser data</span>: We use device data (including IP address) both to troubleshoot problems with our service and to make improvements to it.
+	</li>
+	<li>
+		<span class="strong">Logs</span>: We use log data for a range of business purposes, including to monitor abuse and troubleshoot, to create new services, features, or content, to track behavior at the aggregate/anonymous level to identify and understand trends in the various interactions with our services, and to fix bugs and troubleshoot product functionality.
+	</li>
+	<li>
+		<span class="strong">Third parties and integrations</span>: We collect and use information from third parties and integration partners, where applicable to facilitate Users in making apps and client portals available to you as an Enduser.
+	</li>
+	<li>
+		<span class="strong">Manage internal services</span>: To manage our services we will also internally use your information and data to enforce our agreements where applicable, to prevent potentially illegal activities, and to screen for and prevent undesirable or abusive activity.
+	</li>
+	<li>
+		<span class="strong">Legal uses</span>: To respond to legal requests or prevent fraud, we may need to use and disclose information or data we hold about you. If we receive a subpoena or other legal request, we may need to inspect the data we hold to determine how to respond.
+	</li>
+</ul>
+<h4 class="h4-style">
+	C. Website Visitors
+</h4>
+<ul>
+	<li>
+		<span class="strong">Lawyer Referral/Directory Portal Submissions</span>: We may store data you submit via Lawyer Referral/Directory Portals in order to render such data to the Lawyer Referral/Directory Portal Users (including administrators) to whom it was submitted.
+	</li>
+	<li>
+		<span class="strong">Information from Cookies</span>: We use first-party and third-party cookies as described in our Cookies Policy.
+	</li>
+	<li>
+		<span class="strong">How you use our services</span>: We use information about how you use our services to improve our services for you and all users. For example, we may collect information about what webpages you visited so we understand what services are the most useful.
+	</li>
+	<li>
+		<span class="strong">Device and browser data</span>: We use device data (including IP address) both to troubleshoot problems with our service and to make improvements to it.
+	</li>
+	<li>
+		<span class="strong">Log data</span>: We use log data for a range of business purposes, including to monitor abuse and troubleshoot, to create new services, features, content or make recommendations, to track behavior at the aggregate/anonymous level to identify and understand trends in the various interactions with our services, and to fix bugs and troubleshoot product functionality.
+	</li>
+	<li>
+		<span class="strong">Referral information</span>: We use referral information to track the success of our integrations and referral processes.
+	</li>
+	<li>
+		<span class="strong">Manage internal services</span>: To manage our services we will also internally use your information and data to enforce our agreements where applicable. to prevent potentially illegal activities, and to screen for and prevent undesirable or abusive activity.
+	</li>
+	<li>
+		<span class="strong">Legal uses</span>: To respond to legal requests or prevent fraud, we may need to use and disclose information or data we hold about you. If we receive a subpoena or other legal request, we may need to inspect the data we hold to determine how to respond.
+	</li>
+</ul>
+<h4 class="h4-style">
+	D. Prohibition on Selling Data (California Privacy Notice)
+</h4>
+<p>
+	Community.lawyer does not sell (nor have we ever sold) the data we process.
+</p>
+<h3 class="h3-style">
+	IV. INFORMATION YOU SHARE
+</h3>
+<p>
+	Some of our Services let you share information with others. Depending on how you elect to share your information (e.g. via public Communities), it may be indexed by search engines.
+</p>
+<h3 class="h3-style">
+	V. INFORMATION WE SHARE
+</h3>
+<p>
+	We do not share your information or data with third parties outside Community.lawyer except in limited circumstances.
+</p>
+<p>
+	To provide certain aspects of our services, we rely on integrations or technology services offered by third parties. We enter into agreements with these third parties to ensure they meet standards for confidentiality, privacy, and security. For example, we rely on third-party services to: send transactional emails; send marketing emails (e.g. our newsletter); send transactional text messages; store data; track engagement on our website; facilitate real-time customer support chat; and process payments.
+</p>
+<p>
+	We also share your information or data if you choose to use an integration in conjunction with Community.lawyer services, to the extent necessary to facilitate that use. We also may have to share information or data in order to: meet any applicable law, regulation, legal process or enforceable governmental request; enforce applicable policies, including investigation of potential violations; detect, prevent, or otherwise address fraud, security or technical issues; protect against harm to the rights, property or safety of our users, the public or to Community.lawyer and/or as required or permitted by law; and facilitate a sale, merger or change in control of all or any part of our company or business or in preparation for any of these events.
+</p>
+<h3 class="h3-style">
+	VI. SUBPROCESSORS
+</h3>
+<p>
+	Where we use any third parties to assist us in delivering our services and they process your data as part of that service, they are considered subprocessors. We enter into GDPR-compliant data processing agreements with each subprocessor, extending GDPR safeguards everywhere personal data is processed. Currently we utilize the following subprocessors:
+</p>
+<ul>
+	<li>
+		Amazon Web Services. Cloud hosting.
+	</li>
+	<li>
+		Drift. Live chat.
+	</li>
+	<li>
+		Google. Business analytics.
+	</li>
+	<li>
+		Mailchimp. Email newsletter.
+	</li>
+	<li>
+		Mailgun. Transactional email.
+	</li>
+	<li>
+		New Relic. Infrastructure monitoring.
+	</li>
+	<li>
+		Rollbar. Error monitoring.
+	</li>
+	<li>
+		Stripe. Payment processing.
+	</li>
+	<li>
+		Twilio. Text messaging.
+	</li>
+</ul>
+<p>
+	If you are an existing Community.lawyer User and need to be notified when additional Subprocessors are used to provide the Services, you can subscribe to updates by <a href="https://communitylawyer.community.lawyer/interview?i=docassemble.playground1%3ALWQu6BpN6ay41q2i.yml" class="text-link-style">submitting this form</a>.
+</p>
+<h3 class="h3-style">
+	VII. COOKIES
+</h3>
+<p>
+	We use first- and third-party cookies and similar technologies on our websites. For more information about cookies, how we use them, and how you can manage them see our Cookies Policy.
+</p>
+<h3 class="h3-style">
+	VIII. SECURITY PRACTICES
+</h3>
+<p>
+	For more about our security practices, please see our <a class="text-link-style" href="https://dcrefers.org/security">Security Practices page</a>.
+</p>
+<h3 class="h3-style">
+	IX. DATE RETENTION
+</h3>
+<p>
+	If you hold an account with Community.lawyer, we do not delete the data in your account that you choose to store. You must make the decision to delete your data and have full control over that. If you are a Website Visitor who submitted data to a User or an Enduser of an app or client portal, you will need to ask the User how long your responses will be stored in Community.lawyer services.
+</p>
+<h3 class="h3-style">
+	X. SAFETY OF MINORS
+</h3>
+<p>
+	The websites and services are not intended for and may not be used by minors. “Minors” are individuals under the age of 13 or under a higher age if permitted by the laws of their residence. Community.lawyer does not knowingly collect personal data from minors or let them create accounts and reserve the right to delete data we reasonably believe is the personal data of minors without notice. If you believe our Services have been used to collect the personal data of a minor, please contact us at hello+privacy@community.lawyer.
+</p>
+<h3 class="h3-style">
+	XI. DATA TRANSFERS
+</h3>
+<p>
+	For users subject to the GDPR and acting as a Data Controller by using our Services, Community.lawyer offers a Data Processing Addendum (DPA), which includes the EU approved Standard Contractual Clauses/Model Clauses:
+</p>
+<a href="https://communitylawyer.community.lawyer/interview?i=docassemble.playground1%3AF8UmbUuPz33SE3jt.yml#page1" class="text-link-style">
+	You can generate a DPA using this app
+</a>
+<h3 class="h3-style">
+	XII. PRIVACY POLICY UPDATES
+</h3>
+<p>
+	We may make changes to this Privacy Policy from time to time. In circumstances where a change will materially change the way in which we collect or use your personal information or data, we will send a notice of this change to all of our account holders.
+</p>
+<h3 class="h3-style">
+	XIII. MARKETING
+</h3>
+<p>
+	You can opt-out from direct marketing in all direct marketing emails.
+</p>
+<h3 class="h3-style">
+	XIV. YOUR RIGHTS
+</h3>
+<p>
+	You may wish to exercise a right to obtain information about yourself or to correct, update or delete that information. These rights may be subject to some exceptions or limitations in local law or based on your location or the services being used (e.g. the Lawyer Referral/Directory Portals, which are available only to United States visitors and users). We will take reasonable steps to verify your identity and we will respond to your request to exercise these rights within a reasonable time subject to the below for specific categories of person.
+</p>
+<h4 class="h4-style">
+	A. Rights Under Privacy Laws
+</h4>
+<p>
+	In accordance with applicable privacy law, User and Enduser of the App Platform, Apps, and/or Client Portal Services have the following rights in respect to your personal information that we hold:
+</p>
+<ul>
+	<li>
+		<span class="strong">Rights of access and portability</span>: The right to obtain access to your personal information and get a copy of this information.
+	</li>
+	<li>
+		<span v>Right to rectification</span>: The right to obtain rectification of your personal information when you want it updated or corrected.
+	</li>
+	<li>
+		<span class="strong">Right to erasure</span>: The right to obtain the deletion of your personal information without undue delay in certain circumstances, such as where the personal information is no longer necessary in relation to the purposes for which it was collected or processed.
+	</li>
+	<li>
+		<span class="strong">Right to restriction</span>: The right to have your personal information stop being used in certain cases, including if you believe that the personal information about you is incorrect or the use is unlawful.
+	</li>
+	<li>
+		<span class="strong">Right to object</span>: The right to object, on grounds relating to your particular situation, to the processing of your personal information, and to object to the processing of your personal information for direct marketing purposes, to the extent it is related to such direct marketing.
+	</li>
+	<li>
+		<span class="strong">Right to non-discrimination</span>: The right to non-discrimination for exercising your rights as outlined in this policy. This includes, but is not limited to, denying you goods or services, charging you different prices for similar services, or providing a different level or quality of service.
+	</li>
+</ul>
+<h4 class="h4-style">
+	B. Exercising Your Rights and Fulfilling Your Responsibilities
+</h4>
+<h5 class="h5-style">
+	i. Users
+</h5>
+<p>
+	Users can view, edit, delete, and download some of your data directly in your account, or you can contact us to exercise your rights. Specifically:
+</p>
+<ul>
+	<li>
+		You can use your account to update your username, password, and billing details.
+	</li>
+	<li>
+		You can use the unsubscribe link in our newsletter emails to opt out of their receipt at any time.
+	</li>
+	<li>
+		You can follow the instructions in our Cookies Policy to manage or clear your cookies.
+	</li>
+	<li>
+		You can delete your account and exercise your right to be forgotten by contacting us at hello+datarequest@community.lawyer.
+	</li>
+</ul>
+<p>
+	Regardless of whether a User is inside or outside of the European Union, you may be required to respond to requests from people who ask to exercise their rights as wel (e.g. delete, update, or obtain a copy of data)l. In addition, Users are responsible for ensuring the apps and the client portals they give Endusers access to comply with privacy laws.
+</p>
+<p>
+	For example, you can build your apps to not collect personal information or you can turn off “Store Responses” and not have access to certain data inputted into apps. You can also use such features or design patterns in combination with integrations with outside databases (e.g. Clio, Google Sheets, Zapier) and only collect the exact subset of data you need. You can include consent statements in the Services you make available to Endusers. When in doubt, we encourage Users to seek legal advice to comply with privacy and data collection laws and regulations.
+</p>
+<h5 class="h5-style">
+	ii. Endusers
+</h5>
+<p>
+	If you are an Enduser with a request related to exercising your rights under privacy laws, we recommend you contact the User who gave you access to the app and/or client portal. The User owns and controls your data, and is responsible for editing, deleting, or giving you a copy of it. If you're unable to get in touch with the User, contact us with the following: link to app and/or client portal to which the User gave you access, date and time you accessed the app and/or client portal, your name and email address. We will attempt to use this information to put you in contact with the User who controls the data.
+</p>
+<h5 class="h5-style">
+	iii. Website Visitors
+</h5>
+<p>
+	A website visitor can be anyone who visits a Community.lawyer webpage. Such visitors can manage data stored about them as described in more detail in our Cookies Policy (if applicable).
+</p>
+<h4 class="h4-style">
+	C. Contacting Us About Your Rights
+</h4>
+<p>
+	If you've communicated with Community.lawyer via email or other channels not listed, and you want to exercise your rights, contact us at hello+privacy@community.lawyer. We may ask you to verify your identity and for info about the communications you received so we can complete your request.
+</p>
+<p>
+	If you wish to exercise one of these rights and want more information on how to do so, please contact us at hello+privacy@community.lawyer. Upon request and if applicable, we will provide you with information about whether we hold any of your personal information. We will respond to your request within 30 days.
+</p>
+
+
+
+
+
+  </div>
+</div>
+
+    <div class="dcrefers" id="tenant_footer">
+  <div class="container">
+    <div class="col-md-3">
+      <a href="../index.html"><img class="feature-img" src="../assets/dcrefers/dc-logo-footer-7150b72a500936219055c2c87ef30777a4d1ea2f5c86e024d23df85a3239d99c.png" /></a>
+      <p></p>
+      <p></p>
+    </div>
+    <div class="col-md-3">
+      <p class="title">
+        Sitemap
+      </p>
+      <ul>
+        <li>
+          <a class="text-link" href="../index.html"><span class="translation_missing" title="translation missing: en.home">Home</span></a>
+        </li>
+        <li>
+          <a href="https://donorbox.org/dcrefers" class="text-link">Donate</a>
+        </li>
+        <li class="dropdown top-level">
+          <a href="privacy.html#" class="dropdown-toggle navbar-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About us <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a class="account-nav-link" id="about-us" href="about.html">About us</a>
+            </li>
+            <li>
+              <a class="account-nav-link" id="mission" href="mission.html">Our Mission and Board</a>
+            </li>
+            <li>
+              <a class="account-nav-link" id="news" href="news.html">News</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown top-level">
+          <a href="privacy.html#" class="dropdown-toggle navbar-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a class="account-nav-link" id="about-us" href="how_to_use.html">How to search DC Refers</a>
+            </li>
+            <li>
+              <a class="account-nav-link" id="about-us" href="resources.html">Other resources</a>
+            </li>
+          </ul>
+        </li>
+        <li class="top-level">
+          <a class="navbar-link" id="about-us" href="join_our_directory.html">Join directory</a>
+        </li>
+        <li>
+          <a class="text-link" href="https://dcrefers.org/attorneys/sign_in"><span class="translation_missing" title="translation missing: en.sign_in">Sign In</span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <p class="title">
+        Contact
+      </p>
+      <ul>
+        <li>
+          dcreducedfeelawyers@gmail.com
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <p class="title">
+        Address
+      </p>
+      <address>
+        DC Refers<br>
+        Washington, DC<br>
+        <br>
+      </address>
+    </div>
+  </div>
+</div>
+<div class="dcrefers" id="footer_disclaimer">
+  <div class="container">
+    <p>
+      DC Refers does not provide legal services, legal representation, recommendations of lawyers, or legal advice of any kind, nor does use of this service create an attorney-client relationship. DC Refers does not receive any money for referrals to lawyers listed in the directory. Images kindly supplied by wocintechchat.com.
+    </p>
+  </div>
+</div>
+<div class="dcrefers" id="footer_cl">
+  <div class="container">
+    <a href="https://afterpattern.com/" target="_blank"><span class="first">Website powered by</span> </br> Afterpattern</br></a>
+    Your use of this site is subject to our <a href="terms-of-service.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.
+  </div>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+      <meta name="description" content="These are the terms and policies that govern the use of Community.lawyer"></meta>
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://checkout.stripe.com/checkout.js"></script>
+
+      <script type="text/javascript"
+              src="https://js.authorize.net/v1/Accept.js"
+              charset="utf-8">
+      </script>
+
+    <title>
+
+        Community.lawyer Terms of Service | DC Refers
+
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="RIQWxmh46n/L5MBRkab49fAIp0zPp4FqHtHLtn+9dSp0mxqP/UVuCyBtxLbCM54XNKe/yWpJSjXGg8vrIGWqdQ==" />
+<meta name="action-cable-url" content="wss://afterpattern.com/cable" />
+
+  <!-- https://polyfill.io/v3/url-builder/ -->
+
+<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?flags=gated&features=Array.from%2CArray.of%2CArray.prototype.entries%2CArray.prototype.every%2CArray.prototype.filter%2CArray.prototype.find%2CArray.prototype.includes%2CArray.prototype.indexOf%2CArray.prototype.keys%2CArray.prototype.map%2CArray.prototype.reduce%2CArray.prototype.some%2CArray.prototype.values%2Cfetch%2CString.prototype.startsWith%2Cdocument.getElementsByClassName%2Cdocument%2Cconsole.log%2Cconsole%2CXMLHttpRequest%2CString.prototype.includes%2CString.prototype.endsWith%2CSet%2CObject.entries%2CObject.assign%2CNumber.parseInt%2CNumber.parseFloat%2CNode.prototype.contains%2CMutationObserver%2CJSON%2CDate.now%2CDate.prototype.toISOString%2CDOMRect%2CArray.prototype.forEach%2CArray.prototype.flatMap%2CArray.prototype.findIndex%2CFunction.prototype.bind%2CMap%2CNumber.isNaN%2CObject.keys%2CObject.values%2CString.prototype.padEnd%2CString.prototype.padStart%2CString.prototype.sub%2CString.prototype.trim%2CSymbol%2ClocalStorage%2CNodeList.prototype.forEach"></script>
+
+
+<input type="hidden" name="" id="global-data" value="" data-network-name="DC Refers" data-stripe-public-key="pk_live_N9oNSB1T9k37N51rriMihyWI" data-lawpay-public-key="m_ejzaElK-TR2DVmuyYbe6og" data-admin-logged-in="false" data-anet-key="" data-anet-id="" data-rails-environment="production" />
+<link rel="shortcut icon" type="image/x-icon" href="../assets/favicons/cl-48704a06a5367b41d330d31ac10e36609289c5aff18faedbf374d3293e94c700.ico" />
+
+
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <link rel="stylesheet" media="screen" href="../packs/application-e0b8bb95.css" />
+    <script src="../packs/application-4388c5d719fe926ed017.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/card/2.4.0/jquery.card.min.js"></script>
+
+
+
+    <script>
+  if (typeof window.__REACT_DEVTOOLS_GLOBAL_HOOK__ === 'object') {
+    __REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function() {};
+  }
+</script>
+
+
+    <script>
+var _rollbarConfig = {
+  accessToken: "a7b9bd9008a64e8f9dbf000d387d205f",
+  captureUncaught: true,
+  captureUnhandledRejections: true,
+  payload: {
+      environment: "production"
+  },
+  checkIgnore: function(isUncaught, args, payload) {
+    // Code here to determine whether or not to send the payload to the Rollbar API
+    // Return true to ignore the payload
+    const shouldIgnore = errorsToIgnore.some(function(error) { return args[0].match(error) });
+    return shouldIgnore;
+  },
+};
+
+const errorsToIgnore = [
+  "ReferenceError: Can't find variable: StripeCheckout", // Usually due to old browser, maybe Stripe doesn't support them?
+  "Uncaught ReferenceError: StripeCheckout is not defined", // Usually due to old browser, maybe Stripe doesn't support them?
+  "TypeError: null is not an object (evaluating 'localStorage.getItem')", // Localstorage is inaccessible, browser may not support it
+  "TypeError: Cannot read property 'getItem' of null", // Localstorage is inaccessible, browser may not support it
+  "TypeError: 'null' is not an object (evaluating 'localStorage.getItem')", // See above
+  "TypeError: 'undefined' is not a function (evaluating 't.getAttribute(\"type\")')", // Usually a bot, sometimes an old browser
+  "TypeError: Cannot read property '2' of null", // ChargeIO error
+  "SecurityError: Permission denied to access property \"dispatchEvent\" on cross-origin object", // Due to a Mozilla add-in outside our control
+  "TypeError: document.getElementsByClassName.ToString is not a function", // Samsung specific error, see https://github.com/SamsungInternet/support/issues/56
+  "(unknown): Script error.", // wtf?
+  "Uncaught ReferenceError: MoatMAK is not defined", // Something to do with StackAdept, see https://twitter.com/MrMrBug/status/1004411714186633216
+  "TypeError: l.LegacyGlobal.should_do_lastpass_here is not a function", // Lastpass browser extension error
+];
+
+// Rollbar Snippet
+!function(r){var e={};function o(n){if(e[n])return e[n].exports;var t=e[n]={i:n,l:!1,exports:{}};return r[n].call(t.exports,t,t.exports,o),t.l=!0,t.exports}o.m=r,o.c=e,o.d=function(r,e,n){o.o(r,e)||Object.defineProperty(r,e,{enumerable:!0,get:n})},o.r=function(r){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(r,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(r,"__esModule",{value:!0})},o.t=function(r,e){if(1&e&&(r=o(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var n=Object.create(null);if(o.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var t in r)o.d(n,t,function(e){return r[e]}.bind(null,t));return n},o.n=function(r){var e=r&&r.__esModule?function(){return r.default}:function(){return r};return o.d(e,"a",e),e},o.o=function(r,e){return Object.prototype.hasOwnProperty.call(r,e)},o.p="",o(o.s=0)}([function(r,e,o){"use strict";var n=o(1),t=o(5);_rollbarConfig=_rollbarConfig||{},_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://cdn.rollbar.com/rollbarjs/refs/tags/v2.23.0/rollbar.min.js",_rollbarConfig.async=void 0===_rollbarConfig.async||_rollbarConfig.async;var a=n.setupShim(window,_rollbarConfig),l=t(_rollbarConfig);window.rollbar=n.Rollbar,a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,l)},function(r,e,o){"use strict";var n=o(2),t=o(3);function a(r){return function(){try{return r.apply(this,arguments)}catch(r){try{console.error("[Rollbar]: Internal error",r)}catch(r){}}}}var l=0;function i(r,e){this.options=r,this._rollbarOldOnError=null;var o=l++;this.shimId=function(){return o},"undefined"!=typeof window&&window._rollbarShims&&(window._rollbarShims[o]={handler:e,messages:[]})}var s=o(4),d=function(r,e){return new i(r,e)},c=function(r){return new s(d,r)};function u(r){return a((function(){var e=this,o=Array.prototype.slice.call(arguments,0),n={shim:e,method:r,args:o,ts:new Date};window._rollbarShims[this.shimId()].messages.push(n)}))}i.prototype.loadFull=function(r,e,o,n,t){var l=!1,i=e.createElement("script"),s=e.getElementsByTagName("script")[0],d=s.parentNode;i.crossOrigin="",i.src=n.rollbarJsUrl,o||(i.async=!0),i.onload=i.onreadystatechange=a((function(){if(!(l||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){i.onload=i.onreadystatechange=null;try{d.removeChild(i)}catch(r){}l=!0,function(){var e;if(void 0===r._rollbarDidLoad){e=new Error("rollbar.js did not load");for(var o,n,a,l,i=0;o=r._rollbarShims[i++];)for(o=o.messages||[];n=o.shift();)for(a=n.args||[],i=0;i<a.length;++i)if("function"==typeof(l=a[i])){l(e);break}}"function"==typeof t&&t(e)}()}})),d.insertBefore(i,s)},i.prototype.wrap=function(r,e,o){try{var n;if(n="function"==typeof e?e:function(){return e||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._rollbar_wrapped&&(r._rollbar_wrapped=function(){o&&"function"==typeof o&&o.apply(this,arguments);try{return r.apply(this,arguments)}catch(o){var e=o;throw e&&("string"==typeof e&&(e=new String(e)),e._rollbarContext=n()||{},e._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=e),e}},r._rollbar_wrapped._isWrap=!0,r.hasOwnProperty))for(var t in r)r.hasOwnProperty(t)&&(r._rollbar_wrapped[t]=r[t]);return r._rollbar_wrapped}catch(e){return r}};for(var p="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad".split(","),f=0;f<p.length;++f)i.prototype[p[f]]=u(p[f]);r.exports={setupShim:function(r,e){if(r){var o=e.globalAlias||"Rollbar";if("object"==typeof r[o])return r[o];r._rollbarShims={},r._rollbarWrappedError=null;var l=new c(e);return a((function(){e.captureUncaught&&(l._rollbarOldOnError=r.onerror,n.captureUncaughtExceptions(r,l,!0),e.wrapGlobalEventHandlers&&t(r,l,!0)),e.captureUnhandledRejections&&n.captureUnhandledRejections(r,l,!0);var a=e.autoInstrument;return!1!==e.enabled&&(void 0===a||!0===a||"object"==typeof a&&a.network)&&r.addEventListener&&(r.addEventListener("load",l.captureLoad.bind(l)),r.addEventListener("DOMContentLoaded",l.captureDomContentLoaded.bind(l))),r[o]=l,l}))()}},Rollbar:c}},function(r,e,o){"use strict";function n(r,e,o,n){r._rollbarWrappedError&&(n[4]||(n[4]=r._rollbarWrappedError),n[5]||(n[5]=r._rollbarWrappedError._rollbarContext),r._rollbarWrappedError=null);var t=e.handleUncaughtException.apply(e,n);o&&o.apply(r,n),"anonymous"===t&&(e.anonymousErrorsPending+=1)}r.exports={captureUncaughtExceptions:function(r,e,o){if(r){var t;if("function"==typeof e._rollbarOldOnError)t=e._rollbarOldOnError;else if(r.onerror){for(t=r.onerror;t._rollbarOldOnError;)t=t._rollbarOldOnError;e._rollbarOldOnError=t}e.handleAnonymousErrors();var a=function(){var o=Array.prototype.slice.call(arguments,0);n(r,e,t,o)};o&&(a._rollbarOldOnError=t),r.onerror=a}},captureUnhandledRejections:function(r,e,o){if(r){"function"==typeof r._rollbarURH&&r._rollbarURH.belongsToShim&&r.removeEventListener("unhandledrejection",r._rollbarURH);var n=function(r){var o,n,t;try{o=r.reason}catch(r){o=void 0}try{n=r.promise}catch(r){n="[unhandledrejection] error getting `promise` from event"}try{t=r.detail,!o&&t&&(o=t.reason,n=t.promise)}catch(r){}o||(o="[unhandledrejection] error getting `reason` from event"),e&&e.handleUnhandledRejection&&e.handleUnhandledRejection(o,n)};n.belongsToShim=o,r._rollbarURH=n,r.addEventListener("unhandledrejection",n)}}}},function(r,e,o){"use strict";function n(r,e,o){if(e.hasOwnProperty&&e.hasOwnProperty("addEventListener")){for(var n=e.addEventListener;n._rollbarOldAdd&&n.belongsToShim;)n=n._rollbarOldAdd;var t=function(e,o,t){n.call(this,e,r.wrap(o),t)};t._rollbarOldAdd=n,t.belongsToShim=o,e.addEventListener=t;for(var a=e.removeEventListener;a._rollbarOldRemove&&a.belongsToShim;)a=a._rollbarOldRemove;var l=function(r,e,o){a.call(this,r,e&&e._rollbar_wrapped||e,o)};l._rollbarOldRemove=a,l.belongsToShim=o,e.removeEventListener=l}}r.exports=function(r,e,o){if(r){var t,a,l="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(t=0;t<l.length;++t)r[a=l[t]]&&r[a].prototype&&n(e,r[a].prototype,o)}}},function(r,e,o){"use strict";function n(r,e){this.impl=r(e,this),this.options=e,function(r){for(var e=function(r){return function(){var e=Array.prototype.slice.call(arguments,0);if(this.impl[r])return this.impl[r].apply(this.impl,e)}},o="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(","),n=0;n<o.length;n++)r[o[n]]=e(o[n])}(n.prototype)}n.prototype._swapAndProcessMessages=function(r,e){var o,n,t;for(this.impl=r(this.options);o=e.shift();)n=o.method,t=o.args,this[n]&&"function"==typeof this[n]&&("captureDomContentLoaded"===n||"captureLoad"===n?this[n].apply(this,[t[0],o.ts]):this[n].apply(this,t));return this},r.exports=n},function(r,e,o){"use strict";r.exports=function(r){return function(e){if(!e&&!window._rollbarInitialized){for(var o,n,t=(r=r||{}).globalAlias||"Rollbar",a=window.rollbar,l=function(r){return new a(r)},i=0;o=window._rollbarShims[i++];)n||(n=o.handler),o.handler._swapAndProcessMessages(l,o.messages);window[t]=n,window._rollbarInitialized=!0}}}}]);
+// End Rollbar Snippet
+
+// Set the person data to be sent with all errors for this notifier.
+</script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webshim/1.16.0/dev/polyfiller.js"></script>
+  <script>
+    webshim.polyfill('forms');
+  </script>
+
+<!-- Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Unspecified fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya:400,500,500i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant:400,400i,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+
+<!-- unconditional fonts -->
+<input type="hidden" id="rails-env" value="production">
+<input type="hidden" id="locale" value="en">
+
+    <script>
+    /* eslint-disable */
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-101425476-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+
+    <script src="../packs/lrs_components-357b83b4e6c864de7dd8.js"></script>
+
+  </head>
+  <body>
+
+
+        <nav class="navbar dcrefers">
+  <div class="wrapper">
+    <div class="navbar-header">
+      <div class="navbar-brand">
+        <a href="../index.html"><img class="feature-img" src="../assets/dcrefers/dc-logo-white-e9abe863c5a5288fc6a2c6210f895e96dac50c2946132aebacb45e48aff01864.png" /></a>
+      </div>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span id="menu_button" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        <span id="menu_button">Menu</span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="collapse-1">
+      <ul class="nav navbar-nav ">
+        <li class="top-level">
+          <a href="https://donorbox.org/dcrefers" class="navbar-link">Donate</a>
+        </li>
+        <li class="dropdown top-level">
+          <a href="terms-of-service.html#" class="dropdown-toggle navbar-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About us <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a class="account-nav-link" id="about-us" href="about.html">About us</a>
+            </li>
+            <li>
+              <a class="account-nav-link" id="mission" href="mission.html">Our Mission and Board</a>
+            </li>
+            <li>
+              <a class="account-nav-link" id="news" href="news.html">News</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown top-level">
+          <a href="terms-of-service.html#" class="dropdown-toggle navbar-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a class="account-nav-link" id="about-us" href="how_to_use.html">How to search DC Refers</a>
+            </li>
+            <li>
+              <a class="account-nav-link" id="about-us" href="resources.html">Other resources</a>
+            </li>
+          </ul>
+        </li>
+        <li class="top-level">
+          <a class="navbar-link" id="about-us" href="join_our_directory.html">Join directory</a>
+        </li>
+          <li class="top-level">
+            <a class="navbar-link" href="https://dcrefers.org/attorneys/sign_in">Sign in</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    
+<div id="terms_and_privacy">
+  <div class="container">
+    <h1 class="h1-style">Terms of Service</h1>
+<p class="date">
+  Updated: February 28, 2020
+</p>
+<br>
+<h2 class="h3-style">
+  Part I - Definitions
+</h2>
+<ol>
+  <li>
+    The “Agreement” or “Terms” refers, collectively, to all the Terms, conditions, notices contained or referenced in this document (the “Terms of Service”) and all other operating rules, policies (including the Community.lawyer Privacy Policy) and procedures that we may publish from time to time on the Website.
+  </li>
+  <li>
+    The “Service” or “Services” refers to the applications, software, products, and services provided by Community.lawyer.
+  </li>
+  <li>
+    The “Website” or “Websites” refers to Community.lawyer’s domains located at community.lawyer, app.law, portal.law, via the Community.lawyer Microsoft Word Add-in, and all Content, Services, and products provided by Community.lawyer at or through these domains, as well as any other websites powered by our Services.
+  </li>
+  <li>
+    “User,” “You,” and “Your” refer to the individual person, company, or organization that has visited or is using the Website or Service; that accesses or uses any part of the Account; or that directs the use of the Account in the performance of its functions. A User must be at least 18 years of age.
+  </li>
+  <li>
+    “Community.lawyer,” “We,” and “Us” refer to Community.lawyer, P.B.C., as well as our affiliates, directors, subsidiaries, contractors, licensors, officers, agents, and employees.
+  </li>
+  <li>
+    “Content” refers to Content featured or displayed through the Websites, including without limitation text, data, articles, images, files, photographs, graphics, software, applications, designs, features, and other materials that are available on the Websites or otherwise available through the Services. "Content" also includes Services. “User-Generated Content” is Content, written or otherwise, created or uploaded by our Users. "Your Content" is Content that you create or own.
+  </li>
+  <li>
+    An "Account" represents a type of legal relationship the User has with Community.lawyer.
+  </li>
+  <li>
+    A “User Account” represents an individual User’s authorization to log in to and use the Services and serves as a User’s identity on Community.lawyer.
+  </li>
+  <li>
+    “App Platform” refers to types of Services we provide that enable Users to create, use, and deploy web applications (called “Apps”) and client portals.
+  </li>
+  <li>
+    “Apps” refer to certain types of Content -- specifically, web applications -- that Users can specify and generate via the App Platform Service and that can be used to collect and process information inputted by Endusers and/or retrieved from other data sources.
+  </li>
+  <li>
+    “Communities” are shared spaces that are part of our App Platform Services and that may be associated with a single entity or with one or more Users where multiple Users can share, view, duplicate, and subscribe to User-Generated Content. A User Account can be a member of any number of Communities.
+  </li>
+  <li>
+    “Lawyer Referral/Directory Portals” are certain kinds of subdomains (such as those used to run lawyer referral Services or find-a-lawyer directories) that are created under the Terms of a separate Software License Agreement (“SLA”) with Community.lawyer.
+  </li>
+  <li>
+    “Client Portals” are shared spaces that are part of our App Platform Services and that can be utilized by Users to make available User-Generated (1) apps solely for the purpose of Endusers running those apps and (2) database records that may contain information collected by apps as well as inputted by the User who operates the Client Portal.
+  </li>
+  <li>
+    “Endusers” are parties whose information and inputs may be collected and processed by apps built by Users or via Client Portals that Users make available.
+  </li>
+</ol>
+<h2 class="h3-style">
+  Part II - General Terms
+</h2>
+<p>
+  Before using our Service or Website, Community.lawyer requires you to read and agree to the following Terms. These Terms govern your use of and access to the Website and Services provided by Community.lawyer.
+</p>
+<p>
+  You should review these Terms periodically as we may update them from time to time:
+</p>
+<p class="all-caps">
+  BY ACCESSING OR USING THE SERVICES, YOU AGREE THAT YOU AND YOUR AGENTS AND ENDUSERS ARE BOUND BY THESE TERMS OF SERVICE. THESE TERMS INCLUDE AN ARBITRATION AGREEMENT, WAIVER OF CLASS­-ACTION RIGHTS, AND LIABILITY LIMITATIONS.
+</p>
+<p class="all-caps">
+  YOU MAY NOT ACCESS OR USE THIS SERVICE IF: (I) YOU CHOOSE NOT TO AGREE TO THE TERMS, (II) YOU ARE UNDER 18 YEARS OF AGE, (III) YOU DO NOT HAVE THE FULL POWER AND AUTHORITY TO ENTER INTO AND FOLLOW THESE TERMS, OR (IV) YOUR AGREEMENT TO AND FOLLOWING OF THESE TERMS DOES OR WILL BREACH OR CONFLICT WITH ANY OTHER AGREEMENT OR ARRANGEMENT YOU HAVE WITH SOMEONE ELSE OR OTHERWISE VIOLATES THE LAW.
+</p>
+<p>
+  We reserve the right to revise these Terms. Changes to these Terms are effective upon posting on our Website. After such posting, your continued use of the Websites and/or Services constitutes your acceptance of those changes.
+</p>
+<h4 class="h4-style">
+  A. Services Community.lawyer Does Not Provide
+</h4>
+<p>
+  Community.lawyer does not provide any of the following:
+</p>
+<ol>
+  <li>
+    Attorney Endorsements, Recommendations, or Referrals
+    <br>
+    While we provide Services that Users may use to operate their own referral services, Community.lawyer does not operate a referral service and does not endorse or recommend any Users (e.g., attorneys or legal organizations). Any reviews, ratings, or other descriptions of or opinions regarding Users published on Community.lawyer do not guarantee or predict future results and should be relied on solely at your own risk.
+  </li>
+  <li>
+    Legal Advice, Legal Opinions, Legal Services, or Legal Representation
+    <br>
+    Community.lawyer is not a law firm and is not engaged in the practice of law. Users are not employees or agents of Community.lawyer.
+  </li>
+  <li>
+    Services that Create An Attorney-Client Relationship
+    <br>
+    Your use of our Service, including but not limited to requesting a consultation or referral from other Users, does not create attorney-client relationships with Community.lawyer or other Users. When Users initiate contact with another User via Community.lawyer and that results in an attorney-client relationship being formed at any time, including but not limited to during a consultation facilitated by our Services, Community.lawyer has no involvement in that relationship nor in any agreements arising out of the relationship. Community.lawyer does not accept any portion of an attorney’s fees, and we are not liable or responsible for any professional Services provided by or acts or omissions of Users.
+  </li>
+  <li>
+    Guarantees of the Identity of Users
+    <br>
+    Community.lawyer does not warrant or represent the accuracy of User identities or claims made by Users. We encourage you to research and, where appropriate, request further proof of any identities or claims made by other Users, particularly when entering into an attorney-client relationship. Where Users provide identity-related information that is untrue, inaccurate, not current, or incomplete, or if Community.lawyer suspects that such information is untrue, inaccurate, not current, or incomplete, Community.lawyer may (but is under no obligation to) suspend or Terminate said Users’ accounts and refuse current or future use of Community.lawyer.
+  </li>
+</ol>
+<h4 class="h4-style">
+  B. Prohibited Use
+</h4>
+<p>
+  Community.lawyer reserves the right to monitor our Services for the purpose of determining that use of the Services and Websites complies with these Terms. YOU AGREE THAT YOU WILL NOT, DIRECTLY OR INDIRECTLY:
+</p>
+<ol>
+  <li>
+    Use the Service, including but not limited to transmitting Content, for any unintended purposes or in a manner that represents unauthorized practice of law or violates these Terms or any law, rule of professional conduct, or regulation;
+  </li>
+  <li>
+    Use the Service, including but not limited to transmitting Content, in a manner that abuses, threatens, defames, libels, incites hatred or violence toward, victimizes, intimidates, or otherwise harasses any person or group of persons;
+  </li>
+  <li>
+    Use the Service, including but not limited to transmitting Content, in a manner that discriminates on the basis of race, color, ethnicity, national origin, ancestry, religion, gender identity or expression, sexual orientation, age, military or veteran status, marital status, or disability;
+  </li>
+  <li>
+    Use the Service, including but not limited to transmitting Content, in a manner that is pornographic or obscene;
+  </li>
+  <li>
+    Except as expressly permitted by these Terms, copy, reproduce, modify, distribute, display, create derivative works of, or transmit any Content on the website or part of the Service;
+  </li>
+  <li>
+    Use the Service or any of our marks commercially, for benchmarking, or to compile Content for a competitive product or Service, or;
+  </li>
+  <li>
+    Reverse engineer, decompile, tamper with, or disassemble the technology used to provide the Service (except as and only to the extent any foregoing restriction is prohibited by a non­waivable provision of applicable law or to the extent as may be permitted by the licensing Terms governing use of any open­-source components), or otherwise attempt to obtain source code;
+  </li>
+  <li>
+    Interfere with or damage the Service or our servers, including but not limited to through the use of viruses, malware, harmful code, denial of service attacks, forged information, or similar methods or technology, or through any form of excessive bulk activity (for example, spamming), or relay any other form of unsolicited advertising or solicitation through our servers, such as get-rich-quick schemes;
+  </li>
+  <li>
+    Reproduce, duplicate, copy, sell, resell, compile, or exploit any portion of the Service, use of the Service, or access to the Service without Community.lawyer's express written permission;
+  </li>
+  <li>
+    Scrape Community.lawyer for spamming purposes (including for the purposes of selling Community.lawyer users' personal information, such as to recruiters, headhunters, and job boards), in a manner that violates these Terms or the rights of others, or in a manner disallowed by the robots.txt page (https://community.lawyer/robots.txt) of our Website;
+  </li>
+  <li>
+    Impersonate or misrepresent your identity or affiliation with a person, entity or organization, or use a false identity;
+  </li>
+  <li>
+    Attempt to obtain unauthorized access to the Service or any materials or information not intentionally made available through the Service;
+  </li>
+  <li>
+    Violate, misappropriate, or infringe a third party’s intellectual property or other right through the Service; or
+  </li>
+  <li>
+    Interfere with any third party’s ability to use or enjoy, or our ability to provide, the Service (e.g., by attempting to disrupt or tamper with Community.lawyer's servers in ways that could harm our Website or Service, to place undue burden on Community.lawyer's servers through automated means, or to access Community.lawyer's Service in ways that exceed your authorization).
+  </li>
+</ol>
+<p>
+  Community.lawyer prohibits the conduct and Content described above and, without obligation, may take measures to prevent or eliminate such conduct and Content on Community.lawyer (e.g. pre-screening, monitoring, and/or removing offending Content/conduct). Users agree that they may be exposed to such conduct and Content and that they bear all risks associated with such exposure. Community.lawyer is not responsible for any Content, information, or materials posted by Users, including but not limited to any reliance on the accuracy, completeness, or usefulness of such materials, information, or Content.
+</p>
+<h4 class="h4-style">
+  C. Intellectual Property Notice
+</h4>
+<ol>
+  <li>
+    Community.lawyer’s Rights to Content
+    <br>
+    Community.lawyer and our licensors, vendors, agents, and/or our Content providers retain ownership of all intellectual property rights of any kind related to the Websites and Services. We reserve all rights that are not expressly granted to you under this Agreement or by law. The look and feel of the Websites and Services is copyright © Community.lawyer, P.B.C. All rights reserved. You may not duplicate, copy, or reuse any portion of the HTML/CSS, Javascript, or visual design elements or concepts without express written permission from Community.lawyer. Community.lawyer makes available its Content, Services, and Website strictly for authorized use by Users. This does not mean we are assigning any ownership or right of exploitation to Users.
+  </li>
+  <li>
+    License to Community.lawyer Policies
+    <br>
+    This Agreement is licensed under the <a href="https://creativecommons.org/publicdomain/zero/1.0/" class="text-link-style">Creative Commons Zero license</a>.
+  </li>
+</ol>
+<h4 class="h4-style">
+  D. User Generated Content and Third-Party Submissions
+</h4>
+<ol>
+  <li>
+    User-Generated Content
+    <ol type="a">
+      <li>
+        Responsibility for User-Generated Content: Community.lawyer may include Services that allow you to generate Content. You are solely responsible for the Content of, and for any harm resulting from, any User-Generated Content that you post, upload, link to or otherwise make available via the Service, regardless of the form of that Content. We are not responsible for any public display or misuse of your User-Generated Content.
+      </li>
+      <li>
+        Community.lawyer May Remove Content: We do not pre-screen User-Generated Content, but we have the right (though not the obligation) to refuse or remove any User-Generated Content that, in our sole discretion, violates any Community.lawyer Terms or policies.
+      </li>
+      <li>
+        Ownership of Content, Right to Post, and License Grants: You retain ownership of and responsibility for Your Content. If you’re posting anything you did not create yourself or do not own the rights to, you agree that you are responsible for any Content you post; that you will only submit Content that you have the right to post; and that you will fully comply with any third party licenses relating to Content you post. Because you retain ownership of and responsibility for Your Content, you grant us — and other Community.lawyer Users — certain legal permissions listed in other Sections of these Terms. These license grants apply to Your Content. If you upload Content that already comes with a license granting Community.lawyer the permissions we need to run our Services, no additional license is required. You understand that you will not receive any payment for any of the rights granted to Community.lawyer. The licenses you grant to us will end when you remove Your Content from our servers, unless you granted a license to duplicate or subscribe to your Content.
+      </li>
+      <li>
+        License Grant to Us: You grant us and our legal successors the nonexclusive, worldwide, and royalty-free right to use, copy, reproduce, display, modify, adapt, distribute, and perform your Content solely to render the Websites and provide the Services. The license you grant to us also extends to third-party vendors, Services, and hosting partners we may rely on to provide the hardware, software, networking, storage, monitoring, and other technology reasonably related to rendering the Website and providing the Service. This license does not grant Community.lawyer the right to sell Your Content or otherwise distribute or use it outside of our provision of the Services.
+      </li>
+      <li>
+        Digital Millennium Copyright Act Complaints: If a person believes that Content on our Website or Service violates your copyright, please contact us by emailing hello@community.lawyer or send snail mail to our office address, attention Community.lawyer: 150 Court St, Flr 2, Brooklyn, NY 11201. There may be legal consequences for sending a false or frivolous takedown notice. Before sending a takedown request, you must consider legal uses such as fair use and licensed uses. Community.lawyer encourages Users to file counter-notifications when they believe a DMCA takedown demand is improper. For information on how to respond to improper demands, consult the Chilling Effects (https://www.chillingeffects.org/) website. We will terminate the Accounts of repeat infringers of this policy.
+      </li>
+    </ol>
+  </li>
+  <li>
+    Enduser-Generated Submission Data.
+    <ol type="a">
+      <li>
+        Responsibility for Enduser-Generated Content: Community.lawyer may include Services that allow your App and/or Portal Endusers to submit or otherwise input data (“Submission Data”). You are solely responsible for Submission Data that your Endusers post, upload, link to or otherwise make available via the Services. We are not responsible for any public display or misuse of Submission Data.
+      </li>
+      <li>
+        Community.lawyer May Remove Content: We do not pre-screen Submission Data, but we have the right (though not the obligation) to refuse or remove any such Data that, in our sole discretion, violates any Community.lawyer Terms or policies.
+      </li>
+      <li>
+        Ownership of Content, Right to Post, and License Grants: As between Community.lawyer and you the User, you retain ownership of and responsibility for Submission Data. If your Endusers are submitting data they did not create themselves or do not own the rights to, you agree that you are responsible for any data they submit and that you will fully comply with any third party licenses relating to Content you post.
+      </li>
+      <li>
+        License Grant to Us: You grant us and our legal successors the nonexclusive, worldwide, and royalty-free right to use, copy, reproduce, display, modify, adapt, distribute, and perform Submission Data solely to render the Websites and provide the Services. The license you grant to us also extends to third-party vendors, Services, and hosting partners we may rely on to provide the hardware, software, networking, storage, monitoring, and other technology reasonably related to rendering the Websites and providing the Services. This license does not grant Community.lawyer the right to sell Submission Data or otherwise distribute or use it outside of our provision of the Service.
+      </li>
+      <li>
+        Digital Millennium Copyright Act Complaints: If a person believes that Submission Data on our Website or Service violates your copyright, please contact the User who provides the related App or Client Portal. You may also email us at hello@community.lawyer or send snail mail to our office address, attention Community.lawyer: 150 Court St, Flr 2, Brooklyn, NY 11201. There may be legal consequences for sending a false or frivolous takedown notice. Before sending a takedown request, you must consider legal uses such as fair use and licensed uses. Community.lawyer encourages Users to file counter-notifications when they believe a DMCA takedown demand is improper. For information on how to respond to improper demands, consult the Chilling Effects (https://www.chillingeffects.org/) website. We will terminate the Accounts of repeat infringers of this policy.
+      </li>
+      <li>
+        Submission Data Deletion/Removal: If you remove your Submission Data (by deleting the Data, downgrading an account to lower storage levels, etc.) or deleting your account, Company may immediately and permanently remove associated Submission Data.
+      </li>
+    </ol>
+  </li>
+</ol>
+<h4 class="h4-style">
+  E. Payments to Community.lawyer
+</h4>
+<p>
+  Community.lawyer may offer Users paid Services. To use these Services, Users must provide Community.lawyer with a valid credit card for payment. User will be charged in advance during the applicable payment period (e.g., each month or each year for subscriptions).
+</p>
+<ol>
+  <li>
+    Cancellation
+    <br>
+    Users can cancel a subscription at any time by using their account to delete the paid subscription or by removing a client from a client portal (as applicable). For security reasons, cancellations cannot be accepted by any other means. No charges will be assessed for cancellation of a subscription. Subscribers who cancel a subscription prior to the end of the current billing cycle will not be charged for that subscription in the following cycle or any cycles thereafter.
+  </li>
+  <li>
+    Upgrades & Downgrades
+    <br>
+    The amount charged on the next billing cycle will be automatically updated to reflect any changes to the subscription, including upgrades or downgrades. Subscription changes, including downgrades, may result in loss of access to Content, features, or an increase or reduction in the amount of available capacity for Content provided by the Service.
+  </li>
+  <li>
+    Price Changes
+    <br>
+    All prices are subject to change upon notice. Such notice may be provided by an e-mail message to the User's email or by other reasonable means.
+  </li>
+  <li>
+    Suspension or Termination of Services, Accounts, or Subscriptions
+    <br>
+    As provided elsewhere in these Terms, Community.lawyer has the right to suspend or discontinue providing Services to any User for actions that are in violation of this Agreement. We may (but are under no obligation to) provide prior notice of suspension or termination of paid Services if we believe the violation doesn’t create a security risk or other exigent circumstances.
+  </li>
+  <li>
+    Payment Processing
+    <br>
+    Community.lawyer may process payment using Stripe, LawPay/AffiniPay, or any like payment processor that Community.lawyer, in its sole discretion, chooses to use. By using the payment processing Services, Users agree to the applicable services agreement of our payment processor. Community.lawyer makes no warranties or representations in regards to services provided by payment processors.
+  </li>
+  <li>
+    Refund Policy
+    <br>
+    All charges are final unless otherwise provided in these Terms. Users are not entitled to refunds or credits for partial periods of Service but may request such refunds or credits by emailing hello@community.lawyer. Community.lawyer takes user satisfaction seriously and may (but is under no obligation to) provide the requested refund or credit in its sole discretion.
+  </li>
+</ol>
+<h2 class="h3-style">
+  Part III - Specific Terms Applicable to Services Provided by Community.lawyer
+</h2>
+<h4 class="h4-style">
+  A. App Platform Terms
+</h4>
+<p>
+  In accordance with Part II Section D (related to User-Generated Content) of these Terms, you retain ownership of Your Content, including your apps and Content incorporated into apps you generate using our Services. Under the conditions described in this Section, you grant certain legal permissions to Community.lawyer and other Users when you perform certain acts in relation to such apps and Content.
+</p>
+<ol>
+  <li>
+    Apps in Test Mode
+    <br>
+    Users may create or use an app in test mode. By doing so, you grant no license or permissions to the app and its Content beyond those licenses or permissions otherwise described in these Terms.
+  </li>
+  <li>
+    Apps activated to “My Account”
+    <br>
+    Users may choose to activate an app to “My Account”. By doing so, you grant no license or permissions to the app and its Content beyond those licenses or permissions otherwise described in these Terms. You may, in your sole discretion, choose to share links or access to the app and its Content with other Users or with the public (e.g., you may share an app for use by others within your law firm, share it with clients, or publicly on your own personal or business website or service).
+  </li>
+  <li>
+    Apps activated to private Communities
+    <br>
+    Users may choose to activate an app to a private Community. By doing so, Users grant Community.lawyer the right to index and advertise the app and its associated Content (e.g., its app page) via its Website and Service solely to members of the private Community to which the app is activated. Users can choose to activate an app to a private Community with different combinations of the following permissions: run, subscribe, and duplicate. The license the User grants to other Users in the private Community and to Endusers depends on these permissions and may be subject to in-app fees, subscription fees, and/or duplication fees charged by the User.
+    <ol>
+      <li>
+        Run: By activating an app to a private Community with Run permissions, a User grants other Users in the private Community a non-exclusive, revocable, non-transferable, non-sublicensable, worldwide license to run the app (e.g., by visiting the app’s url directly or clicking the “Run” button on the app’s App Page) solely via the Websites and Services. The license granted does not include the right to share, reproduce, sell, sublicense, or transfer the app or its associated Content. The license terminates at the time the app is no longer activated with Run permissions to the applicable Community.
+      </li>
+      <li>
+        Subscribe: By activating an app to a private Community with Subscribe permissions, a User grants other Users in the private Community a non-exclusive, irrevocable, non-transferable, non-sublicensable, worldwide license (1) to run a customized copy of the app solely via the Websites and Services; and (2) to permit other Users and their Endusers to run the customized copy of the app solely by way of activating the app to “My Account” or “Client Portals”. The license granted does not include the right to share the app in other manners (e.g., by activating it to Communities), or to reproduce, sublicense, or transfer the app or its associated Content. The license terminates at the time the subscription copy of the app is deleted by the subscribing User.
+      </li>
+      <li>
+        Duplicate: By activating an app to a private Community with Duplicate permissions, a User grants other Users in the private Community a non-exclusive, irrevocable, non-transferable, non-sublicensable, worldwide license (1) to run a copy of the app, whether modified or not, solely via the Website and Service; (2) to permit other Users and their Endusers to run the copy of the app, whether modified or not, solely via the Websites and Services; and (3) to activate one or more copies of the app, whether modified or not, to other Communities solely via the Website and Service. The license terminates at the time the duplicate copy or copies of the app are deleted by the duplicating User.
+      </li>
+    </ol>
+  </li>
+  <li>
+    Apps activated to public Communities
+    <br>
+    Users may choose to activate an app to a public Community. By doing so, Users grant Community.lawyer the right to index and advertise the app and its associated Content (e.g., its App Page) via the Website and Services to any User, Enduser, and to the public. Users can choose to activate an app to a public Community with different combinations of the following permissions: run, subscribe, and duplicate. The license the User grants to other Users, Endusers, and the public depends on these permissions and may be subject to in-app fees, subscription fees, and/or duplication fees charged by the User.
+    <ol>
+      <li>
+        Run: By activating an app to a public Community with Run permissions, a User grants other Users and Endusers a non-exclusive, revocable, non-transferable, non-sublicensable, worldwide license to run the app (e.g., by visiting the app’s url directly or clicking the “Run” button on the app’s App Page) solely via the Websites and Services. The license granted does not include the right to share, reproduce, sell, sublicense, or transfer the app or its associated Content. The license terminates at the time the app is no longer activated with Run permissions to the applicable Community.
+      </li>
+      <li>
+        Subscribe: By activating an app to a public Community with Subscribe permissions, a User grants other Users a non-exclusive, irrevocable, non-transferable, non-sublicensable, worldwide license (1) to run a customized copy of the app solely via the Websites and Services; and (2) to permit other Users and their Endusers to run the customized copy of the app solely by way of activating the app to “My Account” or “Client Portals”. The license granted does not include the right to share the app in other manners (e.g., by activating it to Communities), or to reproduce, sublicense, or transfer the app or its associated Content. The license terminates at the time the subscription copy of the app is deleted by the subscribing User.
+      </li>
+      <li>
+        Duplicate: By activating an app to a public Community with Duplicate permissions, a User grants other Users and their Endusers a non-exclusive, irrevocable, non-transferable, non-sublicensable, worldwide license (1) to run a copy of the app, whether modified or not, solely via the Websites and Services; (2) to permit other Users and their Endusers to run the copy of the app, whether modified or not, solely via the Websites and Services; and (3) to activate one or more copies of the app, whether modified or not, to other Communities. The license terminates at the time the duplicate copy or copies of the app are deleted by the duplicating User.
+      </li>
+    </ol>
+  </li>
+  <li>
+    Earnings & Payouts to Users in Communities: When (1) an app activated to one or more Communities processes an in-app purchase or is subscribed to or duplicated for a fee, or (2) a User’s Community is subscribed to for a fee, the User who activated the app or created the Community, respectively, receives the payment in their connected Stripe account. Stripe deducts the following fees from that payment:
+    <ol>
+      <li>
+        Stripe Processing Fee: In accordance with its Terms of Service which the User has separately agreed to, Stripe assesses transaction fees on payments (e.g., 2.9% plus 30 cents per transaction).
+      </li>
+      <li>
+        Marketplace Fee: Community.lawyer receives 20% of the payment for our role in providing marketplace and app technology infrastructure.
+      </li>
+    </ol>
+  </li>
+  <li>
+    Refund Policy related to in-app payments, subscription fees, and duplications fees via apps activated to Communities and to subscription fees to Communities: You agree to the following App Purchases Refund Policy when you activate an app to a Community, make a purchase via an app activated to a Community, or pay a fee to subscribe to or duplicate an app activated to a Community or to subscribe to a Community:
+    <blockquote>
+      <p>
+        &ldquo;Unlike physical goods, access to a digital asset like an app or access to an online Community cannot be ‘returned’ once provided to a User. As such, all purchases in apps or fees paid to subscribe to or duplicate apps or to subscribe to Communities are final and nonrefundable.
+      </p>
+      <p>
+        Community.lawyer reserves the right to offer refunds of Marketplace Fees it charges to Users who activate an app in a Community, or to refund purchases made by Users in or of other Users’ apps in certain circumstances. For example, if a fee or purchase falls into one of the circumstances listed below, you may be eligible for a refund:
+      </p>
+      <ol type="i">
+        <li>
+          Misrepresentation: An App Page description materially misrepresents what the app actually does.
+        </li>
+        <li>
+         Technical Failures: The app you purchased has a technical issue that makes it permanently unuseable. If the technical issue could have been discovered by the User who activated the app prior to activation (e.g., in Test Mode), the User who activated the app is not eligible for refund of the Marketplace Fees.
+        </li>
+        <li>
+          Duplicate Purchases: A User unintentionally purchases access to the same app or Community twice.
+        </li>
+      </ol>
+      <p>
+        Refund requests must be submitted by email to hello@community.lawyer within 30 days of the transaction and are granted case-by-case. As part of the refund request, please include the app or Community name, app author or Community owner name, describe the issue, and specific details you have (e.g., screenshots).&rdquo;
+      </p>
+    </blockquote>
+  </li>
+  <li>
+    Refund Policy related to in-app payments via apps activated to My Account, in-app payments via Client Portals, and Portal Enduser subscription payments via Client Portals: You agree that Community.lawyer is under no obligation to refund any transaction fees (as disclosed and periodically update on this page: www.community.lawyer/pricing) we may charge you except as required by Stripe’s Terms of Service.
+  </li>
+  <li>
+    Modifications of and Exceptions to Refund Policies: We may, in our sole discretion, modify our Refund Policies or, on a case-by-case basis, issue a refund for a reason that falls outside of our Refund Policies. Users who activate an app in a Community or Client Portal may issue a refund for (1) purchases in, subscriptions to, or duplications of their app to other Users, (2) subscriptions to Client Portals or Communities, and/or (3) purchases in apps published to Client Portals or to My Account. However, doing so does not entitle the User who activated the app to a refund from Community.lawyer for any marketplace or transaction fees.
+  </li>
+  <li>
+    Money back guarantee for subscriptions to the App Builder service: Community.lawyer provides a 30-day money-back guarantee to Users who have a paid subscription to our App Builder service. This money-back guarantee does not apply to other products or services that may be offered via Community.lawyer, including in-app purchases, app subscriptions, client portal subscriptions, or duplication fees. The Terms of the guarantee are as follows:
+    <ol>
+      <li>
+        The guarantee can only be used by a User or the legal entity on whose behalf the User is using the Account (e.g., a business, nonprofit, or government agency) one time in any 10 year period.
+      </li>
+      <li>
+        Requests for a refund must be submitted by email to hello@community.lawyer within 30 days of the commencement of the subscription. In the email, the User must include a description of why they are not satisfied with the Service.
+      </li>
+      <li>
+        Valid requests that are submitted by eligible Users in a timely manner will be honored within 30 days of the receipt of the request.
+      </li>
+    </ol>
+  </li>
+</ol>
+<h4 class="h4-style">
+  B. Lawyer Referral/Directory Portal Platform Terms
+</h4>
+<p>
+  Community.lawyer may act as an integration medium between a Lawyer Referral/Directory Portal Administrator and a third-party payment processing Service in order to facilitate payment from Legal Service Providers or other kinds of Users to Lawyer Referral/Directory Portal Administrators. By using the third-party payment processing services (e.g., PayPal, Stripe, AffiniPay, Authorize.Net), Users agree to the applicable services agreement of the payment processor. Community.lawyer makes no warranties or representations in regards to services provided by payment processors. The payment processor may charge a payment processing fee in its sole discretion. Lawyer Referral/Directory Portal Administrators are solely responsible for refunds and chargebacks.
+</p>
+<h5 class="h5-style">
+  Part IV - Disclaimers
+</h5>
+<p>
+  While we try to keep Community.lawyer safe, secure, and well functioning, using our Services exposes Users, Endusers, and Website Visitors to some risks. Community.lawyer is not responsible for any harm you may experience. Furthermore:
+</p>
+<p class="all-caps">
+  THE SERVICE, AND ALL MATERIALS, CONTENT, AND PRODUCTS INCLUDED IN OR MADE AVAILABLE IN CONNECTION WITH THE SERVICES, ARE PROVIDED “AS IS,” WITH NO REPRESENTATIONS OR WARRANTIES WHATSOEVER. COMMUNITY.LAWYER AND ITS LICENSORS EXPRESSLY DISCLAIM TO THE FULLEST EXTENT PERMITTED BY LAW ALL WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY, LATENT DEFECTS, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON­INFRINGEMENT, AND QUIET ENJOYMENT.
+</p>
+<p class="all-caps">
+  COMMUNITY.LAWYER DOES NOT REPRESENT OR WARRANT THAT THE SERVICES OR ITS USE WILL: (I) BE UNINTERRUPTED OR SECURE, (II) BE FREE OF DEFECTS, INACCURACIES, OR ERRORS, OR OTHERWISE CURRENT OR COMPLETE, (III) MEET USER OR ENDUSER REQUIREMENTS, (IV) OPERATE IN THE CONFIGURATION OR WITH OTHER HARDWARE OR SOFTWARE USERS OR ENDUSERS USE OR THIRD PARTY WEBSITES OR APPLICATIONS, OR (V) BE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.
+</p>
+<p class="all-caps">
+  YOU AGREE THAT YOUR USE OF THE SERVICES WILL BE AT YOUR SOLE RISK AND THAT YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR HARDWARE OR LOSS OF DATA THAT RESULTS FROM YOUR USE OF THE SERVICES.
+</p>
+<h2 class="h3-style">
+  Part V - Limitation of Damages
+</h2>
+<p>
+  Community.lawyer’s liability for any damages you or a third party may incur is limited as follows:
+</p>
+<p class="all-caps">
+  TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL COMMUNITY.LAWYER, ITS MEMBERS, AFFILIATES, DIRECTORS, ASSOCIATES, PARTNERS, AGENTS, EMPLOYEES, OR REPRESENTATIVES BE LIABLE FOR ANY INDIRECT, EXEMPLARY, PUNITIVE, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING BUT NOT LIMITED TO DAMAGES FOR LOSS OF PROFITS, LOSS OF DATA, LOSS OF GOODWILL, BUSINESS INTERRUPTION, PERSONAL INJURY, LOSS OF PRIVACY, OR ATTORNEYS’ FEES), ARISING OUT OF OR IN ANY WAY RELATED TO THE SERVICES OR WEBSITES, REGARDLESS OF THE CAUSE OF ACTION ON WHICH THEY ARE BASED, EVEN IF COMMUNITY.LAWYER OR SUCH OTHER PERSONS OR ENTITIES HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+</p>
+<p class="all-caps">
+  IN NO EVENT WILL THE CUMULATIVE, AGGREGATE LIABILITY OF COMMUNITY.LAWYER IN CONNECTION WITH THE WEBSITES AND SERVICES EXCEED $100 OR THE AMOUNTS YOU PAID TO COMMUNITY.LAWYER IN CONNECTION WITH THE PARTICULAR PRODUCT OR SERVICE AT ISSUE, WHICHEVER IS GREATER.
+</p>
+<p class="all-caps">
+  YOU MAY HAVE OTHER RIGHTS WHICH MAY VARY FROM STATE TO STATE OR IN OTHER JURISDICTIONS OR COUNTRIES. BECAUSE SOME STATES OR JURISDICTIONS MAY NOT ALLOW LIMITATIONS ON THE DURATION OF IMPLIED WARRANTIES, OR LIMITATIONS ON OR EXCLUSIONS OF CONSEQUENTIAL OR INCIDENTAL DAMAGES, SOME OF THE ABOVE LIMITATIONS MAY NOT APPLY TO A USER OR ENDUSER DEPENDING ON HER, HIS, OR THEIR STATE OR NATION OF RESIDENCE.
+</p>
+<h2 class="h3-style">
+  Part VI - Indemnity
+</h2>
+<p>
+  You agree to indemnify Community.lawyer for all costs in connection with claims.
+</p>
+<p>
+  You agree to defend, indemnify, and hold Community.lawyer its affiliates, and their respective employees, representatives, agents, attorneys, directors, officers, and members harmless from any damage, loss, cost, or expense (including but not limited to attorneys’ fees and costs) incurred in connection with any third party claim, demand, or action brought or asserted against any of the indemnified parties: (i) alleging facts or circumstances that would constitute a breach of any provision of these Terms by you; (ii) arising from or related to your use of the Services; or (iii) arising from or related to your User Content. If you are required to provide indemnification, Community.lawyer may, in its sole and absolute discretion, control any claim at your sole cost and expense. You may not settle, compromise, or in any other manner dispose of any claim without Community.lawyer’s consent.
+</p>
+<h2 class="h3-style">
+  Part VII - Changes to the Service; Termination
+</h2>
+<p>
+  Community.lawyer may terminate or modify the Services or your use of the Websites at any time unless termination procedures are otherwise provided in a Software License Agreement the User has separately entered into with Community.lawyer (in which case termination is governed by that agreement) or in another section of this Agreement. Community.lawyer may, in its sole and absolute discretion and without any liability, modify, suspend, or discontinue any aspect of the Services, temporarily or permanently, at any time. We may deny you access to all or part of the Services at any time for any reason or no reason at all. If we Terminate your use of the Services, you must cease all use of the Services immediately. These Terms will survive indefinitely unless and until Community.lawyer chooses to terminate them. Unless otherwise required by law, we will notify you when we make changes to these Terms.
+</p>
+<h2 class="h3-style">
+  Part VIII - Disputes
+</h2>
+<p>
+  If you have any dispute with us, you agree that before taking any formal action, you will contact us at hello@community.lawyer, provide a brief, written description of the dispute, and your contact information and allow sixty days to pass, during which we will attempt to reach an amicable settlement of any issue. Disputes are further limited by the following: These Terms, your use of the Service, and any other matter relating to Community.lawyer will be governed by the laws of the state of New York, without regard to conflict of laws principles. These Terms and each of its parts evidence a transaction involving interstate commerce, and the United States Arbitration Act applies in all cases and governs the interpretation and enforcement of the arbitration rules and arbitration proceedings. Any claims arising out of, relating to, or connected with these Terms must be asserted individually in binding arbitration administered by the American Arbitration Association (“AAA”) in accordance with its Commercial Arbitration Terms and the AAA Supplementary Procedures for Consumer­ Related Disputes (including, without limitation, utilizing desk, phone or video conference proceedings where appropriate and permitted to mitigate costs of travel) in New York, New York. The arbitrator shall not conduct any form of class or collective arbitration nor join or consolidate claims by or for individuals. The Arbitrator, and not any federal, state, or local court or agency, will have exclusive authority to resolve any dispute relating to the interpretation, applicability, enforceability or formation of these Terms, including but not limited to any claim that all or any part of these Terms is void or voidable or a particular claim is subject to arbitration. Judgment on the award rendered by the Arbitrator may be entered in any court of competent jurisdiction. There are only two exceptions to this arbitration agreement:
+</p>
+<p>
+  First, if we reasonably believe that you have in any manner violated or threatened to violate these Terms, we may seek injunctive or other appropriate relief in any court of competent jurisdiction.
+</p>
+<p>
+  Second, any claim of $1,000 or less may, at the option of the claiming party, be resolved in small claims court in New York, New York if the claim and the parties are within the jurisdiction of the small claims court.
+</p>
+<p class="all-caps">
+  BY AGREEING TO THESE TERMS, YOU HEREBY IRREVOCABLY WAIVE ANY RIGHT YOU MAY HAVE TO A COURT TRIAL (OTHER THAN SMALL CLAIMS COURT AS PROVIDED ABOVE) OR TO SERVE AS A REPRESENTATIVE, AS A PRIVATE ATTORNEY GENERAL, OR IN ANY OTHER REPRESENTATIVE CAPACITY, OR TO PARTICIPATE AS A MEMBER OF A CLASS OF CLAIMANTS, IN ANY LAWSUIT, ARBITRATION, OR OTHER PROCEEDING FILED AGAINST US AND/OR RELATED THIRD PARTIES.
+</p>
+<p class="all-caps">
+  REGARDLESS OF ANY STATUTE OR LAW TO THE CONTRARY, ANY CLAIM OR CAUSE OF ACTION ARISING OUT OF OR RELATED TO USE OF THE WEBSITE, SERVICE, OR THE TERMS MUST BE FILED WITHIN ONE YEAR AFTER SUCH CLAIM OR CAUSE OF ACTION ARISES OR IT WILL BE FOREVER BARRED.
+</p>
+<h2 class="h3-style">
+  Part IX - Miscellaneous
+</h2>
+<p>
+  Except as provided in any applicable Software License Agreement and/or Data Processing Addendum between Community.lawyer and the User, these Terms (which incorporate our Privacy, Security, and Cookie policies) make up the entire agreement between the parties regarding Community.lawyer and supersedes any prior agreements.
+</p>
+<p>
+  Under no circumstances will Community.lawyer or its licensors be held liable for any delay or failure in performance resulting directly or indirectly from an event beyond Community.lawyer’s reasonable control.
+</p>
+<p>
+  The Services is controlled and offered by Community.lawyer from the United States of America. Unless provided elsewhere in our agreement with the User, Community.lawyer makes no representation that the Services may be used in or complies with the laws of other locations. Use from other locations is at your own risk. You consent to processing in the United States of America of the data you provide.
+</p>
+<p>
+  If you provide us with your email address, you agree that we may send you emails related to the Service or your account. If you do not want to receive promotional emails related to the Service, you can opt­ out by following the instructions in our messages. You may not opt out of emails relating to the administration of any Service you request. We will communicate with you by email or by posting notices on the website. You agree that all agreements, notices, disclosures, and other communications that we provide to you electronically satisfy any legal requirement that such communications be in writing. If you have a legal requirement to communicate with or give notice to us, you must use the address: Community.lawyer, P.B.C., 150 Court St, 2nd Floor, Brooklyn, NY 11201.
+</p>
+<p>
+  You may not transfer your rights or obligations under these Terms without the prior written consent of Community.lawyer. Community.lawyer may freely do so, in whole or in part. These Terms will be binding upon the successors and permitted assigns of you and Community.lawyer. These Terms do not create any third party beneficiary rights. These Terms will be interpreted as if equally drafted by Community.lawyer and you. A party’s failure or delay in exercising (in whole or in part) any right, power, or privilege under these Terms will not waive its rights to exercise such right, power, or privilege in the future. If any provision of these Terms is declared invalid or unenforceable, then such provision will be deemed automatically amended to the minimum extent necessary to conform to the requirements for validity, and the remaining provisions of these Terms will remain in full force and effect.
+</p>
+<p>
+  You acknowledge that you have read, understood, and are bound by these Terms of Service, as well as by the Privacy Policy of Community.lawyer. If you have any questions about this agreement, please email us at hello@community.lawyer.
+</p>
+
+
+
+  </div>
+</div>
+
+
+    <div class="dcrefers" id="tenant_footer">
+  <div class="container">
+    <div class="col-md-3">
+      <a href="../index.html"><img class="feature-img" src="../assets/dcrefers/dc-logo-footer-7150b72a500936219055c2c87ef30777a4d1ea2f5c86e024d23df85a3239d99c.png" /></a>
+      <p></p>
+      <p></p>
+    </div>
+    <div class="col-md-3">
+      <p class="title">
+        Sitemap
+      </p>
+      <ul>
+        <li>
+          <a class="text-link" href="../index.html"><span class="translation_missing" title="translation missing: en.home">Home</span></a>
+        </li>
+        <li>
+          <a href="https://donorbox.org/dcrefers" class="text-link">Donate</a>
+        </li>
+        <li class="dropdown top-level">
+          <a href="terms-of-service.html#" class="dropdown-toggle navbar-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About us <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a class="account-nav-link" id="about-us" href="about.html">About us</a>
+            </li>
+            <li>
+              <a class="account-nav-link" id="mission" href="mission.html">Our Mission and Board</a>
+            </li>
+            <li>
+              <a class="account-nav-link" id="news" href="news.html">News</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown top-level">
+          <a href="terms-of-service.html#" class="dropdown-toggle navbar-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a class="account-nav-link" id="about-us" href="how_to_use.html">How to search DC Refers</a>
+            </li>
+            <li>
+              <a class="account-nav-link" id="about-us" href="resources.html">Other resources</a>
+            </li>
+          </ul>
+        </li>
+        <li class="top-level">
+          <a class="navbar-link" id="about-us" href="join_our_directory.html">Join directory</a>
+        </li>
+        <li>
+          <a class="text-link" href="https://dcrefers.org/attorneys/sign_in"><span class="translation_missing" title="translation missing: en.sign_in">Sign In</span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <p class="title">
+        Contact
+      </p>
+      <ul>
+        <li>
+          dcreducedfeelawyers@gmail.com
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <p class="title">
+        Address
+      </p>
+      <address>
+        DC Refers<br>
+        Washington, DC<br>
+        <br>
+      </address>
+    </div>
+  </div>
+</div>
+<div class="dcrefers" id="footer_disclaimer">
+  <div class="container">
+    <p>
+      DC Refers does not provide legal services, legal representation, recommendations of lawyers, or legal advice of any kind, nor does use of this service create an attorney-client relationship. DC Refers does not receive any money for referrals to lawyers listed in the directory. Images kindly supplied by wocintechchat.com.
+    </p>
+  </div>
+</div>
+<div class="dcrefers" id="footer_cl">
+  <div class="container">
+    <a href="https://afterpattern.com/" target="_blank"><span class="first">Website powered by</span> </br> Afterpattern</br></a>
+    Your use of this site is subject to our <a href="terms-of-service.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.
+  </div>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /word_addin/
+Disallow: /attorneys/sign_in/
+Disallow: /admin/sign_in/
+Disallow: /builder/
+Disallow: /pricing
+Disallow: /no_account
+Disallow: /users/sign_up
+Disallow: /users/supersecretsignupsheet
+
+
+Sitemap: https://afterpattern.com/sitemaps/dcrefers.xml.gz

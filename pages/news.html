@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+      <meta name="description" content="Updates and news related to the DC Refers directory, the legal industry, and the District of Columbia."></meta>
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://checkout.stripe.com/checkout.js"></script>
+
+      <script type="text/javascript"
+              src="https://js.authorize.net/v1/Accept.js"
+              charset="utf-8">
+      </script>
+
+    <title>
+
+        Legal News | DC Refers
+
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="J8IFmCTkoNepV0O62auc65u64Jjdfie7P3GqFrb7ey4X3QnRsdkko0LeR12KPvoJXxX4HXiQ7OTnI6pL6SOkcQ==" />
+<meta name="action-cable-url" content="wss://afterpattern.com/cable" />
+
+  <!-- https://polyfill.io/v3/url-builder/ -->
+
+<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?flags=gated&features=Array.from%2CArray.of%2CArray.prototype.entries%2CArray.prototype.every%2CArray.prototype.filter%2CArray.prototype.find%2CArray.prototype.includes%2CArray.prototype.indexOf%2CArray.prototype.keys%2CArray.prototype.map%2CArray.prototype.reduce%2CArray.prototype.some%2CArray.prototype.values%2Cfetch%2CString.prototype.startsWith%2Cdocument.getElementsByClassName%2Cdocument%2Cconsole.log%2Cconsole%2CXMLHttpRequest%2CString.prototype.includes%2CString.prototype.endsWith%2CSet%2CObject.entries%2CObject.assign%2CNumber.parseInt%2CNumber.parseFloat%2CNode.prototype.contains%2CMutationObserver%2CJSON%2CDate.now%2CDate.prototype.toISOString%2CDOMRect%2CArray.prototype.forEach%2CArray.prototype.flatMap%2CArray.prototype.findIndex%2CFunction.prototype.bind%2CMap%2CNumber.isNaN%2CObject.keys%2CObject.values%2CString.prototype.padEnd%2CString.prototype.padStart%2CString.prototype.sub%2CString.prototype.trim%2CSymbol%2ClocalStorage%2CNodeList.prototype.forEach"></script>
+
+
+<input type="hidden" name="" id="global-data" value="" data-network-name="DC Refers" data-stripe-public-key="pk_live_N9oNSB1T9k37N51rriMihyWI" data-lawpay-public-key="m_ejzaElK-TR2DVmuyYbe6og" data-admin-logged-in="false" data-anet-key="" data-anet-id="" data-rails-environment="production" />
+<link rel="shortcut icon" type="image/x-icon" href="../assets/favicons/cl-48704a06a5367b41d330d31ac10e36609289c5aff18faedbf374d3293e94c700.ico" />
+
+
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <link rel="stylesheet" media="screen" href="../packs/application-e0b8bb95.css" />
+    <script src="../packs/application-4388c5d719fe926ed017.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/card/2.4.0/jquery.card.min.js"></script>
+
+
+
+    <script>
+  if (typeof window.__REACT_DEVTOOLS_GLOBAL_HOOK__ === 'object') {
+    __REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function() {};
+  }
+</script>
+
+
+    <script>
+var _rollbarConfig = {
+  accessToken: "a7b9bd9008a64e8f9dbf000d387d205f",
+  captureUncaught: true,
+  captureUnhandledRejections: true,
+  payload: {
+      environment: "production"
+  },
+  checkIgnore: function(isUncaught, args, payload) {
+    // Code here to determine whether or not to send the payload to the Rollbar API
+    // Return true to ignore the payload
+    const shouldIgnore = errorsToIgnore.some(function(error) { return args[0].match(error) });
+    return shouldIgnore;
+  },
+};
+
+const errorsToIgnore = [
+  "ReferenceError: Can't find variable: StripeCheckout", // Usually due to old browser, maybe Stripe doesn't support them?
+  "Uncaught ReferenceError: StripeCheckout is not defined", // Usually due to old browser, maybe Stripe doesn't support them?
+  "TypeError: null is not an object (evaluating 'localStorage.getItem')", // Localstorage is inaccessible, browser may not support it
+  "TypeError: Cannot read property 'getItem' of null", // Localstorage is inaccessible, browser may not support it
+  "TypeError: 'null' is not an object (evaluating 'localStorage.getItem')", // See above
+  "TypeError: 'undefined' is not a function (evaluating 't.getAttribute(\"type\")')", // Usually a bot, sometimes an old browser
+  "TypeError: Cannot read property '2' of null", // ChargeIO error
+  "SecurityError: Permission denied to access property \"dispatchEvent\" on cross-origin object", // Due to a Mozilla add-in outside our control
+  "TypeError: document.getElementsByClassName.ToString is not a function", // Samsung specific error, see https://github.com/SamsungInternet/support/issues/56
+  "(unknown): Script error.", // wtf?
+  "Uncaught ReferenceError: MoatMAK is not defined", // Something to do with StackAdept, see https://twitter.com/MrMrBug/status/1004411714186633216
+  "TypeError: l.LegacyGlobal.should_do_lastpass_here is not a function", // Lastpass browser extension error
+];
+
+// Rollbar Snippet
+!function(r){var e={};function o(n){if(e[n])return e[n].exports;var t=e[n]={i:n,l:!1,exports:{}};return r[n].call(t.exports,t,t.exports,o),t.l=!0,t.exports}o.m=r,o.c=e,o.d=function(r,e,n){o.o(r,e)||Object.defineProperty(r,e,{enumerable:!0,get:n})},o.r=function(r){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(r,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(r,"__esModule",{value:!0})},o.t=function(r,e){if(1&e&&(r=o(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var n=Object.create(null);if(o.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var t in r)o.d(n,t,function(e){return r[e]}.bind(null,t));return n},o.n=function(r){var e=r&&r.__esModule?function(){return r.default}:function(){return r};return o.d(e,"a",e),e},o.o=function(r,e){return Object.prototype.hasOwnProperty.call(r,e)},o.p="",o(o.s=0)}([function(r,e,o){"use strict";var n=o(1),t=o(5);_rollbarConfig=_rollbarConfig||{},_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://cdn.rollbar.com/rollbarjs/refs/tags/v2.23.0/rollbar.min.js",_rollbarConfig.async=void 0===_rollbarConfig.async||_rollbarConfig.async;var a=n.setupShim(window,_rollbarConfig),l=t(_rollbarConfig);window.rollbar=n.Rollbar,a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,l)},function(r,e,o){"use strict";var n=o(2),t=o(3);function a(r){return function(){try{return r.apply(this,arguments)}catch(r){try{console.error("[Rollbar]: Internal error",r)}catch(r){}}}}var l=0;function i(r,e){this.options=r,this._rollbarOldOnError=null;var o=l++;this.shimId=function(){return o},"undefined"!=typeof window&&window._rollbarShims&&(window._rollbarShims[o]={handler:e,messages:[]})}var s=o(4),d=function(r,e){return new i(r,e)},c=function(r){return new s(d,r)};function u(r){return a((function(){var e=this,o=Array.prototype.slice.call(arguments,0),n={shim:e,method:r,args:o,ts:new Date};window._rollbarShims[this.shimId()].messages.push(n)}))}i.prototype.loadFull=function(r,e,o,n,t){var l=!1,i=e.createElement("script"),s=e.getElementsByTagName("script")[0],d=s.parentNode;i.crossOrigin="",i.src=n.rollbarJsUrl,o||(i.async=!0),i.onload=i.onreadystatechange=a((function(){if(!(l||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){i.onload=i.onreadystatechange=null;try{d.removeChild(i)}catch(r){}l=!0,function(){var e;if(void 0===r._rollbarDidLoad){e=new Error("rollbar.js did not load");for(var o,n,a,l,i=0;o=r._rollbarShims[i++];)for(o=o.messages||[];n=o.shift();)for(a=n.args||[],i=0;i<a.length;++i)if("function"==typeof(l=a[i])){l(e);break}}"function"==typeof t&&t(e)}()}})),d.insertBefore(i,s)},i.prototype.wrap=function(r,e,o){try{var n;if(n="function"==typeof e?e:function(){return e||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._rollbar_wrapped&&(r._rollbar_wrapped=function(){o&&"function"==typeof o&&o.apply(this,arguments);try{return r.apply(this,arguments)}catch(o){var e=o;throw e&&("string"==typeof e&&(e=new String(e)),e._rollbarContext=n()||{},e._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=e),e}},r._rollbar_wrapped._isWrap=!0,r.hasOwnProperty))for(var t in r)r.hasOwnProperty(t)&&(r._rollbar_wrapped[t]=r[t]);return r._rollbar_wrapped}catch(e){return r}};for(var p="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad".split(","),f=0;f<p.length;++f)i.prototype[p[f]]=u(p[f]);r.exports={setupShim:function(r,e){if(r){var o=e.globalAlias||"Rollbar";if("object"==typeof r[o])return r[o];r._rollbarShims={},r._rollbarWrappedError=null;var l=new c(e);return a((function(){e.captureUncaught&&(l._rollbarOldOnError=r.onerror,n.captureUncaughtExceptions(r,l,!0),e.wrapGlobalEventHandlers&&t(r,l,!0)),e.captureUnhandledRejections&&n.captureUnhandledRejections(r,l,!0);var a=e.autoInstrument;return!1!==e.enabled&&(void 0===a||!0===a||"object"==typeof a&&a.network)&&r.addEventListener&&(r.addEventListener("load",l.captureLoad.bind(l)),r.addEventListener("DOMContentLoaded",l.captureDomContentLoaded.bind(l))),r[o]=l,l}))()}},Rollbar:c}},function(r,e,o){"use strict";function n(r,e,o,n){r._rollbarWrappedError&&(n[4]||(n[4]=r._rollbarWrappedError),n[5]||(n[5]=r._rollbarWrappedError._rollbarContext),r._rollbarWrappedError=null);var t=e.handleUncaughtException.apply(e,n);o&&o.apply(r,n),"anonymous"===t&&(e.anonymousErrorsPending+=1)}r.exports={captureUncaughtExceptions:function(r,e,o){if(r){var t;if("function"==typeof e._rollbarOldOnError)t=e._rollbarOldOnError;else if(r.onerror){for(t=r.onerror;t._rollbarOldOnError;)t=t._rollbarOldOnError;e._rollbarOldOnError=t}e.handleAnonymousErrors();var a=function(){var o=Array.prototype.slice.call(arguments,0);n(r,e,t,o)};o&&(a._rollbarOldOnError=t),r.onerror=a}},captureUnhandledRejections:function(r,e,o){if(r){"function"==typeof r._rollbarURH&&r._rollbarURH.belongsToShim&&r.removeEventListener("unhandledrejection",r._rollbarURH);var n=function(r){var o,n,t;try{o=r.reason}catch(r){o=void 0}try{n=r.promise}catch(r){n="[unhandledrejection] error getting `promise` from event"}try{t=r.detail,!o&&t&&(o=t.reason,n=t.promise)}catch(r){}o||(o="[unhandledrejection] error getting `reason` from event"),e&&e.handleUnhandledRejection&&e.handleUnhandledRejection(o,n)};n.belongsToShim=o,r._rollbarURH=n,r.addEventListener("unhandledrejection",n)}}}},function(r,e,o){"use strict";function n(r,e,o){if(e.hasOwnProperty&&e.hasOwnProperty("addEventListener")){for(var n=e.addEventListener;n._rollbarOldAdd&&n.belongsToShim;)n=n._rollbarOldAdd;var t=function(e,o,t){n.call(this,e,r.wrap(o),t)};t._rollbarOldAdd=n,t.belongsToShim=o,e.addEventListener=t;for(var a=e.removeEventListener;a._rollbarOldRemove&&a.belongsToShim;)a=a._rollbarOldRemove;var l=function(r,e,o){a.call(this,r,e&&e._rollbar_wrapped||e,o)};l._rollbarOldRemove=a,l.belongsToShim=o,e.removeEventListener=l}}r.exports=function(r,e,o){if(r){var t,a,l="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(t=0;t<l.length;++t)r[a=l[t]]&&r[a].prototype&&n(e,r[a].prototype,o)}}},function(r,e,o){"use strict";function n(r,e){this.impl=r(e,this),this.options=e,function(r){for(var e=function(r){return function(){var e=Array.prototype.slice.call(arguments,0);if(this.impl[r])return this.impl[r].apply(this.impl,e)}},o="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(","),n=0;n<o.length;n++)r[o[n]]=e(o[n])}(n.prototype)}n.prototype._swapAndProcessMessages=function(r,e){var o,n,t;for(this.impl=r(this.options);o=e.shift();)n=o.method,t=o.args,this[n]&&"function"==typeof this[n]&&("captureDomContentLoaded"===n||"captureLoad"===n?this[n].apply(this,[t[0],o.ts]):this[n].apply(this,t));return this},r.exports=n},function(r,e,o){"use strict";r.exports=function(r){return function(e){if(!e&&!window._rollbarInitialized){for(var o,n,t=(r=r||{}).globalAlias||"Rollbar",a=window.rollbar,l=function(r){return new a(r)},i=0;o=window._rollbarShims[i++];)n||(n=o.handler),o.handler._swapAndProcessMessages(l,o.messages);window[t]=n,window._rollbarInitialized=!0}}}}]);
+// End Rollbar Snippet
+
+// Set the person data to be sent with all errors for this notifier.
+</script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webshim/1.16.0/dev/polyfiller.js"></script>
+  <script>
+    webshim.polyfill('forms');
+  </script>
+
+<!-- Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Unspecified fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya:400,500,500i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant:400,400i,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+
+<!-- unconditional fonts -->
+<input type="hidden" id="rails-env" value="production">
+<input type="hidden" id="locale" value="en">
+
+    <script>
+    /* eslint-disable */
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-101425476-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+
+    <script src="../packs/lrs_components-357b83b4e6c864de7dd8.js"></script>
+
+  </head>
+  <body>
+
+
+        <nav class="navbar dcrefers">
+  <div class="wrapper">
+    <div class="navbar-header">
+      <div class="navbar-brand">
+        <a href="../index.html"><img class="feature-img" src="../assets/dcrefers/dc-logo-white-e9abe863c5a5288fc6a2c6210f895e96dac50c2946132aebacb45e48aff01864.png" /></a>
+      </div>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span id="menu_button" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        <span id="menu_button">Menu</span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="collapse-1">
+      <ul class="nav navbar-nav ">
+        <li class="top-level">
+          <a href="https://donorbox.org/dcrefers" class="navbar-link">Donate</a>
+        </li>
+        <li class="dropdown top-level">
+          <a href="news.html#" class="dropdown-toggle navbar-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About us <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a class="account-nav-link" id="about-us" href="about.html">About us</a>
+            </li>
+            <li>
+              <a class="account-nav-link" id="mission" href="mission.html">Our Mission and Board</a>
+            </li>
+            <li>
+              <a class="account-nav-link" id="news" href="news.html">News</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown top-level">
+          <a href="news.html#" class="dropdown-toggle navbar-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a class="account-nav-link" id="about-us" href="how_to_use.html">How to search DC Refers</a>
+            </li>
+            <li>
+              <a class="account-nav-link" id="about-us" href="resources.html">Other resources</a>
+            </li>
+          </ul>
+        </li>
+        <li class="top-level">
+          <a class="navbar-link" id="about-us" href="join_our_directory.html">Join directory</a>
+        </li>
+          <li class="top-level">
+            <a class="navbar-link" href="https://dcrefers.org/attorneys/sign_in">Sign in</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    
+<div class="header-section dcrefers">
+  <div class="container">
+    <h3>DC Refers</h3>
+    <h1>News</h1>
+  </div>
+</div>
+
+<div class="main-section dcrefers">
+  <div class="container">
+    <div class="col-sm-8">
+      <div class="news-card">
+        <a href="https://www.fastcase.com/blog/fastcase-announces-2018-fastcase-50-honorees/" target="_blank" class="news-link">
+          <h2>DC Refers Steering Committee member Andrea Ferster recognized as top innovator, visionary and leader</h2>
+        </a>
+        <p class="explainer">
+          July 9, 2018 &#x2015; Washington, DC
+        </p>
+        <div class="news-section">
+          <img class="news-headshot" src="../assets/dcrefers/dcrefers-andrea-105d94654e29dfa0cf4e74f6ff9d15ffbbe4ca8cec92d8c266d182fa725d2f66.png" />
+          <p>
+            Legal publisher Fastcase today announced the company’s annual list of “Fastcase 50” honorees. Selected from online nominations, the award recognizes the year’s smartest, most courageous innovators, techies, visionaries, and leaders in the law. Many of the 2018 honorees are pioneers in the areas of access to justice, artificial intelligence, and visualization tools for legal data.
+          </p>
+        </div>
+        <p>
+          Andrea Ferster is a public interest advocate in private practice who works to enforce federal environmental laws on behalf of local governments and citizens groups, and serves as General Counsel for the Rails to Trails Conservancy, which helps turn old railway tracks into pedestrian and bike paths. Motivated by the idea that lawyers are agents of social change, Andrea, as Past President of the D.C. Bar, developed programs to encourage members to participate in pro bono service. Now she helps lead The DC Reduced Fee Lawyer & Mediator Referral Service (DC Refers), a 501(c)(3) working to connect lawyers with modest-means clients seeking low-cost legal services. The service fills a gap for clients who don’t qualify for legal aid, but who nevertheless struggle to afford traditional legal services.
+        </p>
+        <p>
+          View the full list of 2018 winners <a href="http://www.fastcase.com/fastcase50/?class=2018" target="
+          " class="text-link">here</a>.
+        </p>
+      </div>
+      <div class="news-card">
+        <h2>DC Refers Launched</h2>
+        <p class="explainer">
+          February 22, 2017 &#x2015; Washington, DC
+        </p>
+        <img class="news" src="../assets/dcrefers/dc-logo-footer-7150b72a500936219055c2c87ef30777a4d1ea2f5c86e024d23df85a3239d99c.png" />
+        <p>
+          The DC Reduced Fee Lawyer & Mediator Referral Service (“DC Refers”) is pleased to announce the launch of an online directory of reduced fee lawyers.
+        </p>
+        <p>
+          The mission of DC Refers is to connect clients who need affordable legal and mediation services with qualified attorneys.  As its pilot project, DC Refers is launching an online directory of pre-screened attorneys willing to charge reduced fees to modest-means clients with incomes falling within 200-400% of the federal poverty guidelines.  Modest-means clients will use the online directory to access a list of reduced fee lawyers who may be available to represent, advise, or help them on a broad range of legal matters.
+        </p>
+        <p>
+          “The need for affordable legal services for people of modest means in DC is great,” notes Steering Committee member Nancy Lopez, Executive Director of Washington Council of Lawyers. “People who earn too much to afford free legal services, but not enough to pay market rates for representation have very few options when faced with housing, family law, domestic violence, debt collection, probate, or other legal troubles.”
+        </p>
+        <p>
+          “We have been aware for quite some time of the access to justice gap for those who earn too much to receive free legal services but who find it profoundly challenging to find competent counsel to represent them in potentially life-changing cases,” said Eric Angel, Executive Director of the Legal Aid Society of the District of Columbia, D.C.’s oldest and largest general civil legal services program.  “We are hopeful that this new directory is an important step in the right direction.”
+        </p>
+        <p>
+          Andrea Ferster, co-chair of DC Refers and past president of the D.C. Bar, hopes that the online directory will become a trusted resource for legal service organizations, court-based resource centers, and private attorneys, who will now have a place to send people of modest means.
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-4 request-card sticky">
+      <a href="https://docs.google.com/document/d/1_wJdA-AcP7-ys_RMmXi1SKF1eHEhiQEXnZP3hBT9pPo/export?format=pdf" class="download-button" target="_blank">
+        <i class="fa fa-file-pdf-o"></i>
+        Download PDF Flyer
+      </a>
+      <div class="card">
+        <div class="image-section">
+          <img src="../assets/general/general-contact-216821cbee952857769511a545008fa3a4e2a325e178849537325e1a4239e957.png" />
+        </div>
+        <div class="main-section">
+          <p>
+            The DC Refers directory is an online listing of qualified attorneys who are willing to represent modest-means clients at below-market rates.
+          </p>
+          <a class="primary_button" id="main-start" href="https://dcrefers.org/go">Find a lawyer ⟶</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="social dc">
+  <div class="container">
+    <div class="social_wrapper">
+      <div class="mc-embed">
+        <div id="mc_embed_signup">
+          <form action="https://dcreducedfeelawyers.us12.list-manage.com/subscribe/post?u=234fb1f4c2f1668f6b464e0b7&amp;id=f2b5783e1f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">Stay up-to-date</label>
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_234fb1f4c2f1668f6b464e0b7_f2b5783e1f" tabindex="-1" value=""></div>
+                <input type="submit" value="Join mailing list" name="subscribe" id="mc-embedded-subscribe" class="button">
+              </div>
+          </form>
+        </div>
+      </div>
+      <div>
+        <a href="mailto:dcreducedfeelawyers@gmail.com">
+          <img class="icon-img" src="../assets/dcrefers/email-00cc269ae2f10973ffb4cc9f4f1fc5b6bf62383de0d0ce81d954a7336591a772.png" />
+        </a>
+        <a href="https://twitter.com/DC_Refers">
+          <img class="icon-img" src="../assets/dcrefers/twitter-e448c763bad8735448228e7b452b4c17f43d5fe116f0682b1fd9d70836d05340.png" />
+        </a>
+        <a href="https://www.facebook.com/FacebookDC/">
+          <img class="icon-img" src="../assets/dcrefers/facebook-73877b363f7c7ec18bec30738480ac09b3dd47bcf7a2a666cf6c9fecf4196738.png" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="dcrefers" id="tenant_footer">
+  <div class="container">
+    <div class="col-md-3">
+      <a href="../index.html"><img class="feature-img" src="../assets/dcrefers/dc-logo-footer-7150b72a500936219055c2c87ef30777a4d1ea2f5c86e024d23df85a3239d99c.png" /></a>
+      <p></p>
+      <p></p>
+    </div>
+    <div class="col-md-3">
+      <p class="title">
+        Sitemap
+      </p>
+      <ul>
+        <li>
+          <a class="text-link" href="../index.html"><span class="translation_missing" title="translation missing: en.home">Home</span></a>
+        </li>
+        <li>
+          <a href="https://donorbox.org/dcrefers" class="text-link">Donate</a>
+        </li>
+        <li class="dropdown top-level">
+          <a href="news.html#" class="dropdown-toggle navbar-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About us <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a class="account-nav-link" id="about-us" href="about.html">About us</a>
+            </li>
+            <li>
+              <a class="account-nav-link" id="mission" href="mission.html">Our Mission and Board</a>
+            </li>
+            <li>
+              <a class="account-nav-link" id="news" href="news.html">News</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown top-level">
+          <a href="news.html#" class="dropdown-toggle navbar-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a class="account-nav-link" id="about-us" href="how_to_use.html">How to search DC Refers</a>
+            </li>
+            <li>
+              <a class="account-nav-link" id="about-us" href="resources.html">Other resources</a>
+            </li>
+          </ul>
+        </li>
+        <li class="top-level">
+          <a class="navbar-link" id="about-us" href="join_our_directory.html">Join directory</a>
+        </li>
+        <li>
+          <a class="text-link" href="https://dcrefers.org/attorneys/sign_in"><span class="translation_missing" title="translation missing: en.sign_in">Sign In</span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <p class="title">
+        Contact
+      </p>
+      <ul>
+        <li>
+          dcreducedfeelawyers@gmail.com
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <p class="title">
+        Address
+      </p>
+      <address>
+        DC Refers<br>
+        Washington, DC<br>
+        <br>
+      </address>
+    </div>
+  </div>
+</div>
+<div class="dcrefers" id="footer_disclaimer">
+  <div class="container">
+    <p>
+      DC Refers does not provide legal services, legal representation, recommendations of lawyers, or legal advice of any kind, nor does use of this service create an attorney-client relationship. DC Refers does not receive any money for referrals to lawyers listed in the directory. Images kindly supplied by wocintechchat.com.
+    </p>
+  </div>
+</div>
+<div class="dcrefers" id="footer_cl">
+  <div class="container">
+    <a href="https://afterpattern.com/" target="_blank"><span class="first">Website powered by</span> </br> Afterpattern</br></a>
+    Your use of this site is subject to our <a href="terms-of-service.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.
+  </div>
+</div>
+
+  </body>
+</html>
